@@ -1,0 +1,19 @@
+How long did this take (estimate)?
+
+About 2 1/2 hours
+
+What were the enjoyable aspects of the lab?
+
+I liked seeing the existing code and working my way through it to
+see how it worked
+
+What were the challenging parts of this lab?
+I had issues getting the scale to work, I also did not realize 
+how we were supposed to do the color scale until later
+
+What resources did you use? Include links to websites below. 
+
+This is one site I used for the ordinal scale
+https://d3js.org/d3-scale/ordinal
+
+Besides that I consulted previous labs (4 and 6) and used the handout

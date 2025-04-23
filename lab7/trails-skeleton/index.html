@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>D3 Linked Charts - Basic</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body> 
+    <h1>Vancouver Trails</h1>
+    <!-- The wrapper div, called "container", has the display "flex" in the CSS
+    to help position both divs close to each other on the page.-->
+    <div class="container">
+
+        <!-- We have two divs, one for each SVG.The class for the scatterplot div
+        helps with left/right positioning-->
+        <div class="margin-right"><svg id="scatterplot"></svg></div>
+        <div><svg id="barchart"></svg></div>
+
+    </div>
+
+    <div class="source">
+        Source: Data from <a href="https://vancouvertrails.com/trails/">vancouvertrails.com</a>
+    </div>
+
+    <!-- Similar tooltip code that we have used previously -->
+    <div id="tooltip"></div>
+    
+    <!-- Order matters: we first import D3, then we use it in 
+    scatterplot and barchart. We use our Scatterplot and Barchart
+    objects in our main.js, so it should be last. -->
+    <script src="js/d3.v6.min.js"></script>
+    <script src="js/scatterplot.js"></script>
+    <script src="js/barchart.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
