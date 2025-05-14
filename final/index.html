@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Smash Bros. Ultimate and Video Game Crossovers</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+
+</head>
+<body>
+    <div tabindex="0"> <h1>Network of <i>Super Smash Bros. Ultimate</i> Franchise Links</h1> </div>
+    
+    <div tabindex="0"> <h2>By Will Schuckenbrock and Jack Schwanewede</h2> </div>
+    
+    <div tabindex="0"> This visualization depicts crossovers between <i>Super Smash Bros. Ultimate </i>(2018)
+        and several other video game franchises. Different video game franchises are represented by nodes (circles), and 
+        a crossover is represented by the links (lines). 
+        
+        Read the legend below to see how information about nodes and links are colored. The size of the nodes are also dependent on the 
+        amount of copies sold. Hovering over each node reveals more information about the franchise, such as the name, copies sold, genre, and number of crossovers. Clicking 
+        on a franchise highlights other games that the current franchise has collaborated with.
+
+        Finally, you can use the menus to sort the games in order of Copies Sold, # of Crossovers, and Alphabetically. Clicking on any games in the Order menu or the Crossover List 
+        will also find the node in the graph.
+    </div>
+
+
+
+    <div class="container">
+
+        <div class="menus">
+            <div tabindex="0", id="ordering"> 
+
+                <label for="order"> <b> Order by: <b></label>
+
+                <select name="attribute" id="attr" onchange="dataManipulation(), dataFiltering();">
+                <option value="copies">Copies Sold</option>
+                <option value="crossover"># of Crossovers</option>
+                <option value="alphabetical">Alpahbetical</option>
+                </select>
+
+            </div>
+
+            <div tabindex="0", id="sorting"> 
+
+                <label for="sort"> <b> Sort by: <b></label>
+                
+                <select name="sorted" id="sort" onchange="dataManipulation(), dataFiltering();">
+                <option value="descend">Descending</option>
+                <option value="ascend">Ascending</option>
+                
+                </select>
+
+            </div>
+            
+
+            <div tabindex="0", id="order_list">
+            <select id="order" size="5" style="width: 400px;"></select>
+            </div>
+
+            
+            
+
+
+            <div tabindex="0", id="neighbor-dropdown">
+                <label id="current" for="neighbors"><br> <b> Current Franchise: </b> <br> </label>
+                <label> <b>Crossover List:</b> <br> </label> 
+                <select id="neighbors" size="5" style="width: 400px;"></select>
+            </div>
+
+
+            <div tabindex="0", id="filteringNode"> 
+
+                <label for="filteredNode"> <b> Nodes Display:<b></label>
+                
+                <select name="filterNode" id="filteredNode">
+                <option value="all">All</option>
+                <option value="nintendo">Nintendo</option>
+                <option value="3rd">Third Party</option>
+                
+                </select>
+
+            </div>
+
+            <div tabindex="0", id="filteringLink"> 
+
+                <label for="filteredLink"> <b> Links Display:<b></label>
+                
+                <select name="filterLink" id="filteredLink">
+                <option value="all">All</option>
+                <option value="fighter">Smash Fighter</option>
+                <option value="other">Smash Other</option>
+                <option value="non-smash">Non-Smash</option>
+                
+                </select>
+
+            </div>
+
+
+            <div tabindex="0">
+                <svg id="legend" height=160 width=400></svg>
+            </div>
+
+            
+        </div>
+
+        <div tabindex="0", id="force-directed-graph"></div> <!-- add alt text-->
+        
+        <a href="data/ssbu_with_neighbor_counts.json" download>Download Smash data</a>
+
+
+    </div>
+    
+    <div tabindex="0", id="tooltip"></div>
+
+    <script src="../js/d3.v6.min.js"></script>
+    <script src="js/forceDirectedGraph.js"></script>
+    <script src="js/main.js"></script>
+</body>    
+</html>
+
+

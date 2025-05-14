@@ -1,0 +1,1708 @@
+{
+  "nodes": [
+    {
+      "id": "Super Smash Bros. Ultimate",
+      "size": 76.85,
+      "party": "Y",
+      "genre": "Fighting"
+    },
+    {
+      "id": "Super Mario",
+      "size": 909.38,
+      "party": "Y",
+      "genre": "Platformer"
+    },
+    {
+      "id": "Donkey Kong",
+      "size": 92.0,
+      "party": "Y",
+      "genre": "Platformer"
+    },
+    {
+      "id": "Yoshi",
+      "size": 29.34,
+      "party": "Y",
+      "genre": "Platformer"
+    },
+    {
+      "id": "Wario",
+      "size": 22.81,
+      "party": "Y",
+      "genre": "Party"
+    },
+    {
+      "id": "The Legend of Zelda",
+      "size": 170.35,
+      "party": "Y",
+      "genre": "Action/Adventure"
+    },
+    {
+      "id": "Metroid",
+      "size": 21.6,
+      "party": "Y",
+      "genre": "Metroidvania"
+    },
+    {
+      "id": "Kirby",
+      "size": 48.0,
+      "party": "Y",
+      "genre": "Platformer"
+    },
+    {
+      "id": "Star Fox",
+      "size": 11.67,
+      "party": "Y",
+      "genre": "Shooter"
+    },
+    {
+      "id": "Pokémon",
+      "size": 480.0,
+      "party": "Y",
+      "genre": "RPG"
+    },
+    {
+      "id": "Mother/Earthbound",
+      "size": 1.58,
+      "party": "Y",
+      "genre": "RPG"
+    },
+    {
+      "id": "F-Zero",
+      "size": 5.85,
+      "party": "Y",
+      "genre": "Racing"
+    },
+    {
+      "id": "Ice Climber",
+      "size": 1.5,
+      "party": "Y",
+      "genre": "Platformer"
+    },
+    {
+      "id": "Fire Emblem",
+      "size": 20.0,
+      "party": "Y",
+      "genre": "Tactical RPG"
+    },
+    {
+      "id": "Game & Watch",
+      "size": 43.4,
+      "party": "Y",
+      "genre": "Arcade"
+    },
+    {
+      "id": "Kid Icarus",
+      "size": 3.07,
+      "party": "Y",
+      "genre": "Shooter"
+    },
+    {
+      "id": "Metal Gear",
+      "size": 61.1,
+      "party": "N",
+      "genre": "Action/Adventure"
+    },
+    {
+      "id": "R.O.B.",
+      "size": 1.32,
+      "party": "Y",
+      "genre": "Puzzle"
+    },
+    {
+      "id": "Sonic",
+      "size": 182.13,
+      "party": "N",
+      "genre": "Platformer"
+    },
+    {
+      "id": "Pikmin",
+      "size": 7.2,
+      "party": "Y",
+      "genre": "Strategy"
+    },
+    {
+      "id": "Animal Crossing",
+      "size": 76.76,
+      "party": "Y",
+      "genre": "Simulation"
+    },
+    {
+      "id": "Mega Man",
+      "size": 42.0,
+      "party": "N",
+      "genre": "Platformer"
+    },
+    {
+      "id": "Wii Series",
+      "size": 215.81,
+      "party": "Y",
+      "genre": "Party"
+    },
+    {
+      "id": "Punch-Out",
+      "size": 4.7,
+      "party": "Y",
+      "genre": "Sports"
+    },
+    {
+      "id": "Pac-Man",
+      "size": 63.0,
+      "party": "N",
+      "genre": "Arcade"
+    },
+    {
+      "id": "Xenoblade",
+      "size": 8.7,
+      "party": "Y",
+      "genre": "RPG"
+    },
+    {
+      "id": "Duck Hunt",
+      "size": 28.6,
+      "party": "Y",
+      "genre": "Shooter"
+    },
+    {
+      "id": "Street Fighter",
+      "size": 56.0,
+      "party": "N",
+      "genre": "Fighting"
+    },
+    {
+      "id": "Final Fantasy",
+      "size": 200.0,
+      "party": "N",
+      "genre": "RPG"
+    },
+    {
+      "id": "Bayonetta",
+      "size": 7.0,
+      "party": "N",
+      "genre": "Hack and Slash"
+    },
+    {
+      "id": "Splatoon",
+      "size": 28.38,
+      "party": "Y",
+      "genre": "Shooter"
+    },
+    {
+      "id": "Castlevania",
+      "size": 20.0,
+      "party": "N",
+      "genre": "Metroidvania"
+    },
+    {
+      "id": "Persona",
+      "size": 42.7,
+      "party": "N",
+      "genre": "RPG"
+    },
+    {
+      "id": "Dragon Quest",
+      "size": 88.0,
+      "party": "N",
+      "genre": "RPG"
+    },
+    {
+      "id": "Banjo-Kazooie",
+      "size": 6.34,
+      "party": "N",
+      "genre": "Platformer"
+    },
+    {
+      "id": "Fatal Fury",
+      "size": 5.0,
+      "party": "N",
+      "genre": "Fighting"
+    },
+    {
+      "id": "Arms",
+      "size": 2.72,
+      "party": "Y",
+      "genre": "Fighting"
+    },
+    {
+      "id": "Minecraft",
+      "size": 350.0,
+      "party": "N",
+      "genre": "Sandbox"
+    },
+    {
+      "id": "Tekken",
+      "size": 57.0,
+      "party": "N",
+      "genre": "Fighting"
+    },
+    {
+      "id": "Kingdom Hearts",
+      "size": 36.0,
+      "party": "N",
+      "genre": "RPG"
+    },
+    {
+      "id": "Nintendogs",
+      "size": 27.95,
+      "party": "Y",
+      "genre": "Simulation"
+    },
+    {
+      "id": "Monster Hunter",
+      "size": 108.0,
+      "party": "N",
+      "genre": "Action/Adventure"
+    },
+    {
+      "id": "Undertale",
+      "size": 10.0,
+      "party": "N",
+      "genre": "RPG"
+    },
+    {
+      "id": "Cuphead",
+      "size": 8.0,
+      "party": "N",
+      "genre": "Platformer"
+    },
+    {
+      "id": "Tetris",
+      "size": 520.0,
+      "party": "N",
+      "genre": "Puzzle"
+    },
+    {
+      "id": "Golden Sun",
+      "size": 3.0,
+      "party": "Y",
+      "genre": "RPG"
+    },
+    {
+      "id": "Assassin's Creed",
+      "size": 200.0,
+      "party": "N",
+      "genre": "Action/Adventure"
+    },
+    {
+      "id": "Resident Evil",
+      "size": 167.0,
+      "party": "N",
+      "genre": "Horror"
+    },
+    {
+      "id": "The Sims",
+      "size": 200.0,
+      "party": "N",
+      "genre": "Simulation"
+    },
+    {
+      "id": "Bomberman",
+      "size": 23.2,
+      "party": "N",
+      "genre": "Puzzle"
+    },
+    {
+      "id": "Virtua Fighter",
+      "size": 18.8,
+      "party": "N",
+      "genre": "Fighting"
+    },
+    {
+      "id": "Elder Scrolls",
+      "size": 59.3,
+      "party": "N",
+      "genre": "RPG"
+    },
+    {
+      "id": "Fallout",
+      "size": 38.0,
+      "party": "N",
+      "genre": "RPG"
+    },
+    {
+      "id": "Devil May Cry",
+      "size": 33.0,
+      "party": "N",
+      "genre": "Hack and Slash"
+    },
+    {
+      "id": "Rabbids",
+      "size": 20.0,
+      "party": "N",
+      "genre": "Tactical RPG"
+    },
+    {
+      "id": "Shovel Knight",
+      "size": 3.0,
+      "party": "N",
+      "genre": "Platformer"
+    },
+    {
+      "id": "Balloon Fight",
+      "size": 1.0,
+      "party": "Y",
+      "genre": "Arcade"
+    }
+  ],
+  "links": [
+    {
+      "source": "Super Smash Bros. Ultimate",
+      "target": "Super Mario",
+      "type": "Z"
+    },
+    {
+      "source": "Super Smash Bros. Ultimate",
+      "target": "Donkey Kong",
+      "type": "Z"
+    },
+    {
+      "source": "Super Smash Bros. Ultimate",
+      "target": "Yoshi",
+      "type": "Z"
+    },
+    {
+      "source": "Super Smash Bros. Ultimate",
+      "target": "Wario",
+      "type": "Z"
+    },
+    {
+      "source": "Super Smash Bros. Ultimate",
+      "target": "The Legend of Zelda",
+      "type": "Z"
+    },
+    {
+      "source": "Super Smash Bros. Ultimate",
+      "target": "Metroid",
+      "type": "Z"
+    },
+    {
+      "source": "Super Smash Bros. Ultimate",
+      "target": "Kirby",
+      "type": "Z"
+    },
+    {
+      "source": "Super Smash Bros. Ultimate",
+      "target": "Star Fox",
+      "type": "Z"
+    },
+    {
+      "source": "Super Smash Bros. Ultimate",
+      "target": "Pokémon",
+      "type": "Z"
+    },
+    {
+      "source": "Super Smash Bros. Ultimate",
+      "target": "Mother/Earthbound",
+      "type": "Z"
+    },
+    {
+      "source": "Super Smash Bros. Ultimate",
+      "target": "F-Zero",
+      "type": "Z"
+    },
+    {
+      "source": "Super Smash Bros. Ultimate",
+      "target": "Ice Climber",
+      "type": "Z"
+    },
+    {
+      "source": "Super Smash Bros. Ultimate",
+      "target": "Fire Emblem",
+      "type": "Z"
+    },
+    {
+      "source": "Super Smash Bros. Ultimate",
+      "target": "Game & Watch",
+      "type": "Z"
+    },
+    {
+      "source": "Super Smash Bros. Ultimate",
+      "target": "Kid Icarus",
+      "type": "Z"
+    },
+    {
+      "source": "Super Smash Bros. Ultimate",
+      "target": "Metal Gear",
+      "type": "Z"
+    },
+    {
+      "source": "Super Smash Bros. Ultimate",
+      "target": "R.O.B.",
+      "type": "Z"
+    },
+    {
+      "source": "Super Smash Bros. Ultimate",
+      "target": "Sonic",
+      "type": "Z"
+    },
+    {
+      "source": "Super Smash Bros. Ultimate",
+      "target": "Pikmin",
+      "type": "Z"
+    },
+    {
+      "source": "Super Smash Bros. Ultimate",
+      "target": "Animal Crossing",
+      "type": "Z"
+    },
+    {
+      "source": "Super Smash Bros. Ultimate",
+      "target": "Mega Man",
+      "type": "Z"
+    },
+    {
+      "source": "Super Smash Bros. Ultimate",
+      "target": "Wii Series",
+      "type": "Z"
+    },
+    {
+      "source": "Super Smash Bros. Ultimate",
+      "target": "Punch-Out",
+      "type": "Z"
+    },
+    {
+      "source": "Super Smash Bros. Ultimate",
+      "target": "Pac-Man",
+      "type": "Z"
+    },
+    {
+      "source": "Super Smash Bros. Ultimate",
+      "target": "Xenoblade",
+      "type": "Z"
+    },
+    {
+      "source": "Super Smash Bros. Ultimate",
+      "target": "Duck Hunt",
+      "type": "Z"
+    },
+    {
+      "source": "Super Smash Bros. Ultimate",
+      "target": "Street Fighter",
+      "type": "Z"
+    },
+    {
+      "source": "Super Smash Bros. Ultimate",
+      "target": "Final Fantasy",
+      "type": "Z"
+    },
+    {
+      "source": "Super Smash Bros. Ultimate",
+      "target": "Bayonetta",
+      "type": "Z"
+    },
+    {
+      "source": "Super Smash Bros. Ultimate",
+      "target": "Splatoon",
+      "type": "Z"
+    },
+    {
+      "source": "Super Smash Bros. Ultimate",
+      "target": "Castlevania",
+      "type": "Z"
+    },
+    {
+      "source": "Super Smash Bros. Ultimate",
+      "target": "Persona",
+      "type": "Z"
+    },
+    {
+      "source": "Super Smash Bros. Ultimate",
+      "target": "Dragon Quest",
+      "type": "Z"
+    },
+    {
+      "source": "Super Smash Bros. Ultimate",
+      "target": "Banjo-Kazooie",
+      "type": "Z"
+    },
+    {
+      "source": "Super Smash Bros. Ultimate",
+      "target": "Fatal Fury",
+      "type": "Z"
+    },
+    {
+      "source": "Super Smash Bros. Ultimate",
+      "target": "Arms",
+      "type": "Z"
+    },
+    {
+      "source": "Super Smash Bros. Ultimate",
+      "target": "Minecraft",
+      "type": "Z"
+    },
+    {
+      "source": "Super Smash Bros. Ultimate",
+      "target": "Tekken",
+      "type": "Z"
+    },
+    {
+      "source": "Super Smash Bros. Ultimate",
+      "target": "Kingdom Hearts",
+      "type": "Z"
+    },
+    {
+      "source": "Super Smash Bros. Ultimate",
+      "target": "Nintendogs",
+      "type": "Y"
+    },
+    {
+      "source": "Super Smash Bros. Ultimate",
+      "target": "Monster Hunter",
+      "type": "Y"
+    },
+    {
+      "source": "Super Smash Bros. Ultimate",
+      "target": "Undertale",
+      "type": "Y"
+    },
+    {
+      "source": "Super Smash Bros. Ultimate",
+      "target": "Cuphead",
+      "type": "Y"
+    },
+    {
+      "source": "Super Smash Bros. Ultimate",
+      "target": "Tetris",
+      "type": "Y"
+    },
+    {
+      "source": "Super Smash Bros. Ultimate",
+      "target": "Golden Sun",
+      "type": "Y"
+    },
+    {
+      "source": "Super Smash Bros. Ultimate",
+      "target": "Assassin's Creed",
+      "type": "Y"
+    },
+    {
+      "source": "Super Smash Bros. Ultimate",
+      "target": "Resident Evil",
+      "type": "Y"
+    },
+    {
+      "source": "Super Smash Bros. Ultimate",
+      "target": "The Sims",
+      "type": "Y"
+    },
+    {
+      "source": "Super Smash Bros. Ultimate",
+      "target": "Bomberman",
+      "type": "Y"
+    },
+    {
+      "source": "Super Smash Bros. Ultimate",
+      "target": "Virtua Fighter",
+      "type": "Y"
+    },
+    {
+      "source": "Super Smash Bros. Ultimate",
+      "target": "Elder Scrolls",
+      "type": "Y"
+    },
+    {
+      "source": "Super Smash Bros. Ultimate",
+      "target": "Fallout",
+      "type": "Y"
+    },
+    {
+      "source": "Super Smash Bros. Ultimate",
+      "target": "Devil May Cry",
+      "type": "Y"
+    },
+    {
+      "source": "Super Smash Bros. Ultimate",
+      "target": "Rabbids",
+      "type": "Y"
+    },
+    {
+      "source": "Super Smash Bros. Ultimate",
+      "target": "Shovel Knight",
+      "type": "Y"
+    },
+    {
+      "source": "Super Smash Bros. Ultimate",
+      "target": "Balloon Fight",
+      "type": "Y"
+    },
+    {
+      "source": "Super Mario",
+      "target": "Donkey Kong",
+      "type": "X"
+    },
+    {
+      "source": "Super Mario",
+      "target": "Yoshi",
+      "type": "X"
+    },
+    {
+      "source": "Super Mario",
+      "target": "Wario",
+      "type": "X"
+    },
+    {
+      "source": "Super Mario",
+      "target": "The Legend of Zelda",
+      "type": "X"
+    },
+    {
+      "source": "Super Mario",
+      "target": "Metroid",
+      "type": "X"
+    },
+    {
+      "source": "Super Mario",
+      "target": "Kirby",
+      "type": "X"
+    },
+    {
+      "source": "Super Mario",
+      "target": "Star Fox",
+      "type": "X"
+    },
+    {
+      "source": "Super Mario",
+      "target": "Pokémon",
+      "type": "X"
+    },
+    {
+      "source": "Super Mario",
+      "target": "Mother/Earthbound",
+      "type": "X"
+    },
+    {
+      "source": "Super Mario",
+      "target": "F-Zero",
+      "type": "X"
+    },
+    {
+      "source": "Super Mario",
+      "target": "Ice Climber",
+      "type": "X"
+    },
+    {
+      "source": "Super Mario",
+      "target": "Fire Emblem",
+      "type": "X"
+    },
+    {
+      "source": "Super Mario",
+      "target": "Game & Watch",
+      "type": "X"
+    },
+    {
+      "source": "Super Mario",
+      "target": "Kid Icarus",
+      "type": "X"
+    },
+    {
+      "source": "Super Mario",
+      "target": "Metal Gear",
+      "type": "X"
+    },
+    {
+      "source": "Super Mario",
+      "target": "R.O.B.",
+      "type": "X"
+    },
+    {
+      "source": "Super Mario",
+      "target": "Sonic",
+      "type": "X"
+    },
+    {
+      "source": "Super Mario",
+      "target": "Pikmin",
+      "type": "X"
+    },
+    {
+      "source": "Super Mario",
+      "target": "Animal Crossing",
+      "type": "X"
+    },
+    {
+      "source": "Super Mario",
+      "target": "Mega Man",
+      "type": "X"
+    },
+    {
+      "source": "Super Mario",
+      "target": "Wii Series",
+      "type": "X"
+    },
+    {
+      "source": "Super Mario",
+      "target": "Punch-Out",
+      "type": "X"
+    },
+    {
+      "source": "Super Mario",
+      "target": "Pac-Man",
+      "type": "X"
+    },
+    {
+      "source": "Super Mario",
+      "target": "Xenoblade",
+      "type": "X"
+    },
+    {
+      "source": "Super Mario",
+      "target": "Duck Hunt",
+      "type": "X"
+    },
+    {
+      "source": "Super Mario",
+      "target": "Final Fantasy",
+      "type": "X"
+    },
+    {
+      "source": "Super Mario",
+      "target": "Bayonetta",
+      "type": "X"
+    },
+    {
+      "source": "Super Mario",
+      "target": "Splatoon",
+      "type": "X"
+    },
+    {
+      "source": "Super Mario",
+      "target": "Dragon Quest",
+      "type": "X"
+    },
+    {
+      "source": "Super Mario",
+      "target": "Minecraft",
+      "type": "X"
+    },
+    {
+      "source": "Super Mario",
+      "target": "Tekken",
+      "type": "X"
+    },
+    {
+      "source": "Super Mario",
+      "target": "Nintendogs",
+      "type": "X"
+    },
+    {
+      "source": "Super Mario",
+      "target": "Monster Hunter",
+      "type": "X"
+    },
+    {
+      "source": "Super Mario",
+      "target": "Tetris",
+      "type": "X"
+    },
+    {
+      "source": "Super Mario",
+      "target": "The Sims",
+      "type": "X"
+    },
+    {
+      "source": "Super Mario",
+      "target": "Rabbids",
+      "type": "X"
+    },
+    {
+      "source": "Super Mario",
+      "target": "Balloon Fight",
+      "type": "X"
+    },
+    {
+      "source": "Donkey Kong",
+      "target": "Yoshi",
+      "type": "X"
+    },
+    {
+      "source": "Donkey Kong",
+      "target": "Wario",
+      "type": "X"
+    },
+    {
+      "source": "Donkey Kong",
+      "target": "The Legend of Zelda",
+      "type": "X"
+    },
+    {
+      "source": "Donkey Kong",
+      "target": "Metroid",
+      "type": "X"
+    },
+    {
+      "source": "Donkey Kong",
+      "target": "Kirby",
+      "type": "X"
+    },
+    {
+      "source": "Donkey Kong",
+      "target": "Star Fox",
+      "type": "X"
+    },
+    {
+      "source": "Donkey Kong",
+      "target": "Pokémon",
+      "type": "X"
+    },
+    {
+      "source": "Donkey Kong",
+      "target": "Ice Climber",
+      "type": "X"
+    },
+    {
+      "source": "Donkey Kong",
+      "target": "Game & Watch",
+      "type": "X"
+    },
+    {
+      "source": "Donkey Kong",
+      "target": "Sonic",
+      "type": "X"
+    },
+    {
+      "source": "Donkey Kong",
+      "target": "Pikmin",
+      "type": "X"
+    },
+    {
+      "source": "Donkey Kong",
+      "target": "Animal Crossing",
+      "type": "X"
+    },
+    {
+      "source": "Donkey Kong",
+      "target": "Punch-Out",
+      "type": "X"
+    },
+    {
+      "source": "Donkey Kong",
+      "target": "Pac-Man",
+      "type": "X"
+    },
+    {
+      "source": "Donkey Kong",
+      "target": "Banjo-Kazooie",
+      "type": "X"
+    },
+    {
+      "source": "Donkey Kong",
+      "target": "Minecraft",
+      "type": "X"
+    },
+    {
+      "source": "Donkey Kong",
+      "target": "Tetris",
+      "type": "X"
+    },
+    {
+      "source": "Donkey Kong",
+      "target": "Rabbids",
+      "type": "X"
+    },
+    {
+      "source": "Donkey Kong",
+      "target": "Balloon Fight",
+      "type": "X"
+    },
+    {
+      "source": "Yoshi",
+      "target": "Wario",
+      "type": "X"
+    },
+    {
+      "source": "Yoshi",
+      "target": "The Legend of Zelda",
+      "type": "X"
+    },
+    {
+      "source": "Yoshi",
+      "target": "Kirby",
+      "type": "X"
+    },
+    {
+      "source": "Yoshi",
+      "target": "Metal Gear",
+      "type": "X"
+    },
+    {
+      "source": "Yoshi",
+      "target": "Sonic",
+      "type": "X"
+    },
+    {
+      "source": "Yoshi",
+      "target": "Animal Crossing",
+      "type": "X"
+    },
+    {
+      "source": "Yoshi",
+      "target": "Splatoon",
+      "type": "X"
+    },
+    {
+      "source": "Yoshi",
+      "target": "Minecraft",
+      "type": "X"
+    },
+    {
+      "source": "Yoshi",
+      "target": "Tetris",
+      "type": "X"
+    },
+    {
+      "source": "Wario",
+      "target": "The Legend of Zelda",
+      "type": "X"
+    },
+    {
+      "source": "Wario",
+      "target": "Metroid",
+      "type": "X"
+    },
+    {
+      "source": "Wario",
+      "target": "Kirby",
+      "type": "X"
+    },
+    {
+      "source": "Wario",
+      "target": "Star Fox",
+      "type": "X"
+    },
+    {
+      "source": "Wario",
+      "target": "Pokémon",
+      "type": "X"
+    },
+    {
+      "source": "Wario",
+      "target": "Ice Climber",
+      "type": "X"
+    },
+    {
+      "source": "Wario",
+      "target": "Fire Emblem",
+      "type": "X"
+    },
+    {
+      "source": "Wario",
+      "target": "Game & Watch",
+      "type": "X"
+    },
+    {
+      "source": "Wario",
+      "target": "Kid Icarus",
+      "type": "X"
+    },
+    {
+      "source": "Wario",
+      "target": "R.O.B.",
+      "type": "X"
+    },
+    {
+      "source": "Wario",
+      "target": "Pikmin",
+      "type": "X"
+    },
+    {
+      "source": "Wario",
+      "target": "Animal Crossing",
+      "type": "X"
+    },
+    {
+      "source": "Wario",
+      "target": "Wii Series",
+      "type": "X"
+    },
+    {
+      "source": "Wario",
+      "target": "Punch-Out",
+      "type": "X"
+    },
+    {
+      "source": "Wario",
+      "target": "Duck Hunt",
+      "type": "X"
+    },
+    {
+      "source": "Wario",
+      "target": "Splatoon",
+      "type": "X"
+    },
+    {
+      "source": "Wario",
+      "target": "Minecraft",
+      "type": "X"
+    },
+    {
+      "source": "Wario",
+      "target": "Nintendogs",
+      "type": "X"
+    },
+    {
+      "source": "Wario",
+      "target": "Tetris",
+      "type": "X"
+    },
+    {
+      "source": "Wario",
+      "target": "Bomberman",
+      "type": "X"
+    },
+    {
+      "source": "Wario",
+      "target": "Balloon Fight",
+      "type": "X"
+    },
+    {
+      "source": "The Legend of Zelda",
+      "target": "Kirby",
+      "type": "X"
+    },
+    {
+      "source": "The Legend of Zelda",
+      "target": "Fire Emblem",
+      "type": "X"
+    },
+    {
+      "source": "The Legend of Zelda",
+      "target": "Game & Watch",
+      "type": "X"
+    },
+    {
+      "source": "The Legend of Zelda",
+      "target": "Kid Icarus",
+      "type": "X"
+    },
+    {
+      "source": "The Legend of Zelda",
+      "target": "R.O.B.",
+      "type": "X"
+    },
+    {
+      "source": "The Legend of Zelda",
+      "target": "Sonic",
+      "type": "X"
+    },
+    {
+      "source": "The Legend of Zelda",
+      "target": "Pikmin",
+      "type": "X"
+    },
+    {
+      "source": "The Legend of Zelda",
+      "target": "Animal Crossing",
+      "type": "X"
+    },
+    {
+      "source": "The Legend of Zelda",
+      "target": "Wii Series",
+      "type": "X"
+    },
+    {
+      "source": "The Legend of Zelda",
+      "target": "Xenoblade",
+      "type": "X"
+    },
+    {
+      "source": "The Legend of Zelda",
+      "target": "Bayonetta",
+      "type": "X"
+    },
+    {
+      "source": "The Legend of Zelda",
+      "target": "Splatoon",
+      "type": "X"
+    },
+    {
+      "source": "The Legend of Zelda",
+      "target": "Tekken",
+      "type": "X"
+    },
+    {
+      "source": "The Legend of Zelda",
+      "target": "Nintendogs",
+      "type": "X"
+    },
+    {
+      "source": "The Legend of Zelda",
+      "target": "Monster Hunter",
+      "type": "X"
+    },
+    {
+      "source": "The Legend of Zelda",
+      "target": "Tetris",
+      "type": "X"
+    },
+    {
+      "source": "The Legend of Zelda",
+      "target": "The Sims",
+      "type": "X"
+    },
+    {
+      "source": "The Legend of Zelda",
+      "target": "Elder Scrolls",
+      "type": "X"
+    },
+    {
+      "source": "Metroid",
+      "target": "Kirby",
+      "type": "X"
+    },
+    {
+      "source": "Metroid",
+      "target": "Animal Crossing",
+      "type": "X"
+    },
+    {
+      "source": "Metroid",
+      "target": "Wii Series",
+      "type": "X"
+    },
+    {
+      "source": "Metroid",
+      "target": "Bayonetta",
+      "type": "X"
+    },
+    {
+      "source": "Metroid",
+      "target": "Tekken",
+      "type": "X"
+    },
+    {
+      "source": "Metroid",
+      "target": "Nintendogs",
+      "type": "X"
+    },
+    {
+      "source": "Metroid",
+      "target": "Monster Hunter",
+      "type": "X"
+    },
+    {
+      "source": "Metroid",
+      "target": "Tetris",
+      "type": "X"
+    },
+    {
+      "source": "Kirby",
+      "target": "Mother/Earthbound",
+      "type": "X"
+    },
+    {
+      "source": "Kirby",
+      "target": "F-Zero",
+      "type": "X"
+    },
+    {
+      "source": "Kirby",
+      "target": "Fire Emblem",
+      "type": "X"
+    },
+    {
+      "source": "Kirby",
+      "target": "Kid Icarus",
+      "type": "X"
+    },
+    {
+      "source": "Kirby",
+      "target": "R.O.B.",
+      "type": "X"
+    },
+    {
+      "source": "Kirby",
+      "target": "Animal Crossing",
+      "type": "X"
+    },
+    {
+      "source": "Kirby",
+      "target": "Nintendogs",
+      "type": "X"
+    },
+    {
+      "source": "Kirby",
+      "target": "Tetris",
+      "type": "X"
+    },
+    {
+      "source": "Star Fox",
+      "target": "F-Zero",
+      "type": "X"
+    },
+    {
+      "source": "Star Fox",
+      "target": "R.O.B.",
+      "type": "X"
+    },
+    {
+      "source": "Star Fox",
+      "target": "Animal Crossing",
+      "type": "X"
+    },
+    {
+      "source": "Star Fox",
+      "target": "Bayonetta",
+      "type": "X"
+    },
+    {
+      "source": "Star Fox",
+      "target": "Tekken",
+      "type": "X"
+    },
+    {
+      "source": "Star Fox",
+      "target": "Monster Hunter",
+      "type": "X"
+    },
+    {
+      "source": "Pokémon",
+      "target": "Animal Crossing",
+      "type": "X"
+    },
+    {
+      "source": "Pokémon",
+      "target": "Splatoon",
+      "type": "X"
+    },
+    {
+      "source": "Pokémon",
+      "target": "Tetris",
+      "type": "X"
+    },
+    {
+      "source": "Mother/Earthbound",
+      "target": "Animal Crossing",
+      "type": "X"
+    },
+    {
+      "source": "Mother/Earthbound",
+      "target": "Undertale",
+      "type": "X"
+    },
+    {
+      "source": "F-Zero",
+      "target": "R.O.B.",
+      "type": "X"
+    },
+    {
+      "source": "F-Zero",
+      "target": "Animal Crossing",
+      "type": "X"
+    },
+    {
+      "source": "F-Zero",
+      "target": "Wii Series",
+      "type": "X"
+    },
+    {
+      "source": "F-Zero",
+      "target": "Tekken",
+      "type": "X"
+    },
+    {
+      "source": "Ice Climber",
+      "target": "Animal Crossing",
+      "type": "X"
+    },
+    {
+      "source": "Ice Climber",
+      "target": "Tetris",
+      "type": "X"
+    },
+    {
+      "source": "Fire Emblem",
+      "target": "Persona",
+      "type": "X"
+    },
+    {
+      "source": "Fire Emblem",
+      "target": "Monster Hunter",
+      "type": "X"
+    },
+    {
+      "source": "Fire Emblem",
+      "target": "Tetris",
+      "type": "X"
+    },
+    {
+      "source": "Game & Watch",
+      "target": "Pikmin",
+      "type": "X"
+    },
+    {
+      "source": "Game & Watch",
+      "target": "Punch-Out",
+      "type": "X"
+    },
+    {
+      "source": "Game & Watch",
+      "target": "Tetris",
+      "type": "X"
+    },
+    {
+      "source": "Game & Watch",
+      "target": "Balloon Fight",
+      "type": "X"
+    },
+    {
+      "source": "Kid Icarus",
+      "target": "Tetris",
+      "type": "X"
+    },
+    {
+      "source": "Metal Gear",
+      "target": "Castlevania",
+      "type": "X"
+    },
+    {
+      "source": "Metal Gear",
+      "target": "Monster Hunter",
+      "type": "X"
+    },
+    {
+      "source": "Metal Gear",
+      "target": "Assassin's Creed",
+      "type": "X"
+    },
+    {
+      "source": "Metal Gear",
+      "target": "Bomberman",
+      "type": "X"
+    },
+    {
+      "source": "R.O.B.",
+      "target": "Pikmin",
+      "type": "X"
+    },
+    {
+      "source": "R.O.B.",
+      "target": "Tetris",
+      "type": "X"
+    },
+    {
+      "source": "Sonic",
+      "target": "Mega Man",
+      "type": "X"
+    },
+    {
+      "source": "Sonic",
+      "target": "Pac-Man",
+      "type": "X"
+    },
+    {
+      "source": "Sonic",
+      "target": "Street Fighter",
+      "type": "X"
+    },
+    {
+      "source": "Sonic",
+      "target": "Persona",
+      "type": "X"
+    },
+    {
+      "source": "Sonic",
+      "target": "Banjo-Kazooie",
+      "type": "X"
+    },
+    {
+      "source": "Sonic",
+      "target": "Minecraft",
+      "type": "X"
+    },
+    {
+      "source": "Sonic",
+      "target": "Monster Hunter",
+      "type": "X"
+    },
+    {
+      "source": "Sonic",
+      "target": "Tetris",
+      "type": "X"
+    },
+    {
+      "source": "Sonic",
+      "target": "The Sims",
+      "type": "X"
+    },
+    {
+      "source": "Sonic",
+      "target": "Virtua Fighter",
+      "type": "X"
+    },
+    {
+      "source": "Pikmin",
+      "target": "Animal Crossing",
+      "type": "X"
+    },
+    {
+      "source": "Pikmin",
+      "target": "Splatoon",
+      "type": "X"
+    },
+    {
+      "source": "Pikmin",
+      "target": "Tetris",
+      "type": "X"
+    },
+    {
+      "source": "Animal Crossing",
+      "target": "Wii Series",
+      "type": "X"
+    },
+    {
+      "source": "Animal Crossing",
+      "target": "Punch-Out",
+      "type": "X"
+    },
+    {
+      "source": "Animal Crossing",
+      "target": "Splatoon",
+      "type": "X"
+    },
+    {
+      "source": "Animal Crossing",
+      "target": "Nintendogs",
+      "type": "X"
+    },
+    {
+      "source": "Animal Crossing",
+      "target": "Monster Hunter",
+      "type": "X"
+    },
+    {
+      "source": "Animal Crossing",
+      "target": "Tetris",
+      "type": "X"
+    },
+    {
+      "source": "Animal Crossing",
+      "target": "Golden Sun",
+      "type": "X"
+    },
+    {
+      "source": "Animal Crossing",
+      "target": "Balloon Fight",
+      "type": "X"
+    },
+    {
+      "source": "Mega Man",
+      "target": "Street Fighter",
+      "type": "X"
+    },
+    {
+      "source": "Mega Man",
+      "target": "Minecraft",
+      "type": "X"
+    },
+    {
+      "source": "Mega Man",
+      "target": "Tekken",
+      "type": "X"
+    },
+    {
+      "source": "Mega Man",
+      "target": "Monster Hunter",
+      "type": "X"
+    },
+    {
+      "source": "Mega Man",
+      "target": "Resident Evil",
+      "type": "X"
+    },
+    {
+      "source": "Mega Man",
+      "target": "Devil May Cry",
+      "type": "X"
+    },
+    {
+      "source": "Wii Series",
+      "target": "Tetris",
+      "type": "X"
+    },
+    {
+      "source": "Punch-Out",
+      "target": "Duck Hunt",
+      "type": "X"
+    },
+    {
+      "source": "Pac-Man",
+      "target": "Street Fighter",
+      "type": "X"
+    },
+    {
+      "source": "Pac-Man",
+      "target": "Minecraft",
+      "type": "X"
+    },
+    {
+      "source": "Pac-Man",
+      "target": "Tekken",
+      "type": "X"
+    },
+    {
+      "source": "Xenoblade",
+      "target": "Tetris",
+      "type": "X"
+    },
+    {
+      "source": "Street Fighter",
+      "target": "Fatal Fury",
+      "type": "X"
+    },
+    {
+      "source": "Street Fighter",
+      "target": "Minecraft",
+      "type": "X"
+    },
+    {
+      "source": "Street Fighter",
+      "target": "Tekken",
+      "type": "X"
+    },
+    {
+      "source": "Street Fighter",
+      "target": "Monster Hunter",
+      "type": "X"
+    },
+    {
+      "source": "Street Fighter",
+      "target": "Resident Evil",
+      "type": "X"
+    },
+    {
+      "source": "Street Fighter",
+      "target": "Devil May Cry",
+      "type": "X"
+    },
+    {
+      "source": "Final Fantasy",
+      "target": "Persona",
+      "type": "X"
+    },
+    {
+      "source": "Final Fantasy",
+      "target": "Dragon Quest",
+      "type": "X"
+    },
+    {
+      "source": "Final Fantasy",
+      "target": "Minecraft",
+      "type": "X"
+    },
+    {
+      "source": "Final Fantasy",
+      "target": "Tekken",
+      "type": "X"
+    },
+    {
+      "source": "Final Fantasy",
+      "target": "Kingdom Hearts",
+      "type": "X"
+    },
+    {
+      "source": "Final Fantasy",
+      "target": "Monster Hunter",
+      "type": "X"
+    },
+    {
+      "source": "Final Fantasy",
+      "target": "Assassin's Creed",
+      "type": "X"
+    },
+    {
+      "source": "Final Fantasy",
+      "target": "Resident Evil",
+      "type": "X"
+    },
+    {
+      "source": "Final Fantasy",
+      "target": "The Sims",
+      "type": "X"
+    },
+    {
+      "source": "Splatoon",
+      "target": "Tetris",
+      "type": "X"
+    },
+    {
+      "source": "Castlevania",
+      "target": "Bomberman",
+      "type": "X"
+    },
+    {
+      "source": "Persona",
+      "target": "Virtua Fighter",
+      "type": "X"
+    },
+    {
+      "source": "Banjo-Kazooie",
+      "target": "Minecraft",
+      "type": "X"
+    },
+    {
+      "source": "Fatal Fury",
+      "target": "Tekken",
+      "type": "X"
+    },
+    {
+      "source": "Minecraft",
+      "target": "Tetris",
+      "type": "X"
+    },
+    {
+      "source": "Minecraft",
+      "target": "Assassin's Creed",
+      "type": "X"
+    },
+    {
+      "source": "Minecraft",
+      "target": "Elder Scrolls",
+      "type": "X"
+    },
+    {
+      "source": "Minecraft",
+      "target": "Fallout",
+      "type": "X"
+    },
+    {
+      "source": "Tekken",
+      "target": "Virtua Fighter",
+      "type": "X"
+    },
+    {
+      "source": "Monster Hunter",
+      "target": "Tetris",
+      "type": "X"
+    },
+    {
+      "source": "Monster Hunter",
+      "target": "Resident Evil",
+      "type": "X"
+    },
+    {
+      "source": "Monster Hunter",
+      "target": "Devil May Cry",
+      "type": "X"
+    },
+    {
+      "source": "Tetris",
+      "target": "Bomberman",
+      "type": "X"
+    },
+    {
+      "source": "Tetris",
+      "target": "Balloon Fight",
+      "type": "X"
+    },
+    {
+      "source": "Assassin's Creed",
+      "target": "Rabbids",
+      "type": "X"
+    },
+    {
+      "source": "Elder Scrolls",
+      "target": "Fallout",
+      "type": "X"
+    }
+  ]
+}
