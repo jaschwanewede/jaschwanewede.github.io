@@ -1,27 +1,87 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSC 374: Deep Learning | Jack Schwanewede</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f9f9f9;
+    }
+    .container {
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+    }
+    .project-card:hover {
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+      transition: 0.3s ease;
+    }
+    .project-img {
+      max-height: 250px;
+      object-fit: cover;
+    }
+  </style>
+</head>
 <body>
-<h1> CSC 374: Deep Learning</h1>
-<p>My work for deep learning
-</p>
+  <div class="container">
+    <header class="text-center mb-5">
+      <h1 class="display-5 fw-bold">CSC 374: Deep Learning </h1>
+      <p class="lead">Coursework from Spring 2025 — predictive Deep Learning models and papers.</p>
+    </header>
 
+    <div class="row g-4">
+      <!-- Project 1-->
+      <div class="col-md-6">
+        <a href="https://jaschwanewede.github.io/deepLearning/project1.html" target="_blank" class="text-decoration-none text-dark">
+          <div class="card p-3 project-card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Project 1: Median Household Value in California </h5>
+              <p class="card-text">Predicting the median household value in California using block group data. Tools used: sklearn, Manual Gradient Descent</p>
+            </div>
+          </div>
+        </a>
+      </div>
 
-<h2>
-    Project 1: Median Household Value in California 
-<h2>
+      <!-- Project 2 -->
+      <div class="col-md-6">
+        <a href="https://jaschwanewede.github.io/deepLearning/project2.html" target="_blank" class="text-decoration-none text-dark">
+          <div class="card p-3 project-card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Project 2: Detecting Malignant Tumors</h5>
+              <p class="card-text">Identifying benign or malignant tumors from breast cancer data. Tools used: PyTorch, JAX</p>
+            </div>
+          </div>
+        </a>
+      </div>
 
-<h2>
-    Project 2: Detecting Malignant Tumors
-<h2>  
-    
-<h2>
-    Project 3: Classifying Natural Scene Images
-<h2>   
+      <!-- Project 3 -->
+      <div class="col-md-6">
+        <a href="https://jaschwanewede.github.io/deepLearning/project3.html" target="_blank" class="text-decoration-none text-dark">
+          <div class="card p-3 project-card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Project 3: Classifying Natural Scene Images</h5>
+              <p class="card-text">Classifying images into six categories of natural scenes using Convolutional Neural Networks (CNNs). Tools used: PyTorch, CNNs, ResNet</p>
+            </div>
+          </div>
+        </a>
+      </div>
 
-<h2>
-    Final Project: Predicting <i>NBA 2K</i> Ratings and All-Star/All-NBA Selections Using 
-    Season Statistics
-<h2>  
+      <!-- Final Project -->
+      <div class="col-md-6">
+        <a href="https://jaschwanewede.github.io/deepLearning/final.html" target="_blank" class="text-decoration-none text-dark">
+          <div class="card p-3 project-card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Final Project: Predicting <i>NBA 2K</i> Ratings and All-Star/All-NBA Selections Using 
+    Season Statistics</h5>
+              <p class="card-text">Using Player Statistics to Predict <i>2K</i> rating and elite team selection in a multi-task model. Tools used: PyTorch</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
