@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Davidson Field Hockey Corner Logger</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/png" href="images/wildcat_png.png">
+</head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<body>
+
+  <div class="branding">
+    <img src="images/davidson_fieldhockey.jpg" alt="Davidson Field Hockey Logo" class="logo" />
+    <h1>Davidson Field Hockey Corner Logger</h1>
+</div>
+
+
+  <!-- Game Initialization Screen -->
+  <div id="initScreen" class="screen active">
+    <h2>Enter Game Info</h2>
+    <input type="date" id="gameDate" />
+    <input type="text" id="homeTeam" placeholder="Home Team" />
+    <input type="text" id="awayTeam" placeholder="Away Team" />
+    <button onclick="startGame()">Continue</button>
+  </div>
+
+  <!-- Main Menu -->
+  <div id="mainMenu" class="screen">
+    <h2>Main Menu</h2>
+    <button onclick="startOffense()">Offensive Corner</button>
+    <button onclick="startDefense()">Defensive Corner</button>
+    <button onclick="endGame()">End Game</button>
+    <button onclick="openLiveStats()">Live Stats View</button>
+
+  </div>
+
+  <!-- Offensive Corner Screen -->
+  <div id="offenseScreen" class="screen">
+  <h2>Offensive Corner</h2>
+
+  <div class="row-label">Offense (Davidson)</div>
+  <div id="offenseRowOffense" class="player-row"></div>
+
+  <p id="offenseLog">Play: </p>
+
+  <button onclick="undoLastOffense()">Undo Last</button>
+
+  <div class="row-separator"></div> 
+  
+  <div class="row-label">Play Result:</div>
+
+   <div class="result-buttons">
+    <button id="shotButtonOffense" onclick="showShotScreenOffense()">Shot</button>
+    <button id="interceptedButtonOffense" onclick="showInterceptedOffense()">Intercepted</button>
+  </div>
+
+  <div class="row-separator"></div> 
+
+  <button onclick="showScreen('mainMenu')">Cancel</button>
+</div>
+
+ <!-- Defensive Corner Screen (Tracking Opponent's Plays) -->
+<div id="defenseScreen" class="screen">
+  <h2>Defensive Corner</h2>
+
+  <div class="row-label">Offense (Opponent)</div>
+  <div id="offenseRowDefense" class="player-row"></div>
+
+  <p id="defenseLog">Play: </p>
+
+  <button onclick="undoLastDefense()">Undo Last</button>
+
+  <div class="row-separator"></div>
+
+  <div class="row-label">Play Result:</div>
+
+   <div class="result-buttons">
+    <button id="shotButtonDefense" onclick="showShotScreenDefense()">Shot</button>
+    <button id="interceptedButtonDefense" onclick="showInterceptedDefense()">Intercepted</button>
+  </div>
+
+ <div class="row-separator"></div> 
+
+  <button onclick="showScreen('mainMenu')">Cancel</button>
+</div>
+
+<!-- Shot Type Prompt -->
+<div id="ShotScreenOffense" class="screen">
+  <h2>Shot Screen (Davidson)</h2>
+
+  <div class="row-label">Shot Type</div>
+<div class="shotTypes">
+  <button class="shot-type" onclick="selectShotType(this, 'Straight Shot')">Straight Shot</button>
+  <button class="shot-type" onclick="selectShotType(this, 'Slap Shot')">Slap Shot</button>
+  <button class="shot-type" onclick="selectShotType(this, 'Flick')">Flick</button>
+  <button class="shot-type" onclick="selectShotType(this, 'Push Pass')">Push Pass</button>
+  <button class="shot-type" onclick="selectShotType(this, 'Scoop')">Scoop</button>
+  <button class="shot-type" onclick="selectShotType(this, 'Other', true)">Other</button>
+</div>
+
+<p id="currentShotTextOffense">Current Shot: None</p>
+
+  <div class="row-separator"></div> 
+  <div class="row-label">Result:</div>
+  <div class="result-buttons">
+    <button id="goalButton" onclick="showGoalScreenOffense()" class="goal-btn">Goal</button>
+    <button id="blockedButton" onclick="showBlockedScreenOffense()">Blocked</button>
+  </div>
+
+  <div class="row-separator"></div> 
+  <button onclick="showScreen('offenseScreen')">Back</button>
+    <button onclick="showScreen('mainMenu')">Cancel</button>
+
+</div>
+
+
+<!-- Shot Type Prompt -->
+<div id="ShotScreenDefense" class="screen">
+  <h2>Shot Screen (Opponent)</h2>
+
+  <div class="row-label">Shot Type</div>
+<div class="shotTypes">
+  <button class="shot-type" onclick="selectShotType(this, 'Straight Shot')">Straight Shot</button>
+  <button class="shot-type" onclick="selectShotType(this, 'Slap Shot')">Slap Shot</button>
+  <button class="shot-type" onclick="selectShotType(this, 'Flick')">Flick</button>
+  <button class="shot-type" onclick="selectShotType(this, 'Push Pass')">Push Pass</button>
+  <button class="shot-type" onclick="selectShotType(this, 'Scoop')">Scoop</button>
+  <button class="shot-type" onclick="selectShotType(this, 'Other', true)">Other</button>
+</div>
+
+<p id="currentShotTextDefense">Current Shot: None</p>
+
+  <div class="row-separator"></div> 
+  <div class="row-label">Result:</div>
+  <div class="result-buttons">
+    <button id="goalButtonDefense" onclick="showGoalScreenDefense()" class="goal-btn">Goal</button>
+    <button id="blockedButtonDefense" onclick="showBlockedScreenDefense()">Blocked</button>
+  </div>
+
+  <div class="row-separator"></div> 
+  <button onclick="showScreen('defenseScreen')">Back</button>
+    <button onclick="showScreen('mainMenu')">Cancel</button>
+
+</div>
+
+
+  <!-- Goal Details -->
+  <div id="goalDetailsOffense" class="screen">
+    <h2>Davidson Goal!</h2>
+    <input type="text" id="scorerName" placeholder="Scorer Name" />
+    <select id="quarter">
+      <option>Q1</option>
+      <option>Q2</option>
+      <option>Q3</option>
+      <option>Q4</option>
+    </select>
+    <input type="text" id="goalTime" placeholder="Time on Clock (e.g. 7:32)" />
+    <button onclick="submitGoalOffense()">Submit Goal</button>
+
+    <div class="row-separator"></div>
+    <button onclick="showScreen('ShotScreenOffense')">Back</button> 
+    
+  </div>
+
+ <!-- Goal Details -->
+  <div id="goalDetailsDefense" class="screen">
+    <h2>Opponent Goal</h2>
+    <input type="text" id="scorerNameDefense" placeholder="Scorer Name" />
+    <select id="quarterDefense">
+      <option>Q1</option>
+      <option>Q2</option>
+      <option>Q3</option>
+      <option>Q4</option>
+    </select>
+    <input type="text" id="goalTimeDefense" placeholder="Time on Clock (e.g. 7:32)" />
+    <button onclick="submitGoalDefense()">Submit Goal</button>
+
+    <div class="row-separator"></div>
+    <button onclick="showScreen('ShotScreenDefense')">Back</button> 
+    
+  </div>
+
+  <!-- Intercepted Row Offense -->
+  <div id="InterceptedScreenOffense" class="screen">
+    <h2>Interception</h2>
+
+    <div class="row-label">Intercepted by Opponent:</div>
+    <div id="interceptedRowOffense" class="player-row"></div>
+    
+    <button onclick="endOffenseCorner(false)">End Corner</button>
+    <button onclick="endOffenseCorner(true)">Recorner</button>
+    <button onclick="showScreen('offenseScreen')">Back</button>
+    <button onclick="showScreen('mainMenu')">Cancel</button>
+  </div>
+
+  <!-- Intercepted Row Defense -->
+  <div id="InterceptedScreenDefense" class="screen">
+    <h2>Interception</h2>
+
+    <div class="row-label">Intercepted by Davidson:</div>
+    <div id="interceptedRowDefense" class="player-row"></div>
+    
+    <button onclick="endDefenseCorner(false)">End Corner</button>
+    <button onclick="endDefenseCorner(true)">Recorner</button>
+    <button onclick="showScreen('defenseScreen')">Back</button>
+    <button onclick="showScreen('mainMenu')">Cancel</button>
+  </div>
+
+   <!-- Blocked Row Offense -->
+  <div id="BlockedScreenOffense" class="screen">
+    <h2>Blocked</h2>
+
+    <div class="row-label">Blocked by Opponent:</div>
+    <div id="blockedRowOffense" class="player-row"></div>
+    
+    <button onclick="endOffenseCorner()">End Corner</button>
+    <button onclick="endOffenseCorner(true)">Recorner</button>
+    <button onclick="showScreen('ShotScreenOffense')">Back</button>
+    <button onclick="showScreen('mainMenu')">Cancel</button>
+  </div>
+
+   <!-- Blocked Row Defense -->
+  <div id="BlockedScreenDefense" class="screen">
+    <h2>Blocked</h2>
+
+    <div class="row-label">Blocked by Davidson:</div>
+    <div id="blockedRowDefense" class="player-row"></div>
+    
+    <button onclick="endDefenseCorner()">End Corner</button>
+    <button onclick="endDefenseCorner(true)">Recorner</button>
+    <button onclick="showScreen('ShotScreenDefense')">Back</button>
+    <button onclick="showScreen('mainMenu')">Cancel</button>
+  </div>
+
+  <!-- End Game Screen -->
+  <div id="endGameScreen" class="screen">
+    <h2>Are you sure you want to end the game?</h2>
+    <button onclick="confirmEnd()">Yes</button>
+    <button onclick="backToMenu()">No</button>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
