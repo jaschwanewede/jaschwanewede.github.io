@@ -1,74 +1,416 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jack Schwanewede Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body {
-      background-color: #f8f9fa;
-    }
-    .header {
-      margin-top: 4rem;
-      margin-bottom: 2rem;
-    }
-    .card a {
-      text-decoration: none;
-      color: inherit;
-    }
-    .card:hover {
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-      transition: box-shadow 0.3s ease;
-    }
-  </style>
-</head>
-<body>
-  <div class="container text-center">
-    <div class="header">
-      <h1 class="display-4">Jack Schwanewede</h1>
-      <p class="lead">
-        I'm a senior Cognitive Science major/Data Science Minor at Davidson College. This site is a work in progress—
-        I'll be adding research, projects, music, and other creative work bit by bit.
-      </p>
-    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Jack Schwanewede Portfolio</title>
+    <meta name="description" content="Portfolio Template for Developer" />
 
-    <div class="row justify-content-center g-4">
-      <div class="col-md-5">
-        <a href="https://jaschwanewede.github.io/dataVis/index.html" target="_blank">
-          <div class="card shadow-sm p-3">
-            <div class="card-body">
-              <h5 class="card-title">CSC 362: Data Visualization</h5>
-              <p class="card-text"> Engaging visualizations and labs created during this course (Spring).</p>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/png/john-doe.png"
+              alt="Jack Schwanewede Logo Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Jack Schwanewede</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper"><a href="./index.html" class="header__link"> Home </a></li>
+            <li class="header__link-wrapper"><a href="./index.html#about" class="header__link">About</a></li>
+            <li class="header__link-wrapper"><a href="./index.html#research" class="header__link">Research</a></li>
+            <li class="header__link-wrapper"><a href="./index.html#projects" class="header__link">Projects</a></li>
+            <li class="header__link-wrapper"><a href="./music.html" class="header__link">Music Page</a></li>
+            <li class="header__link-wrapper"><a href="./index.html#contact" class="header__link">Contact</a></li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img src="./assets/svg/ham-menu.svg" alt="hamburger menu" class="header__main-ham-menu" />
+            <img src="./assets/svg/ham-menu-close.svg" alt="hamburger menu close" class="header__main-ham-menu-close d-none" />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link"><a href="./index.html">Home</a></li>
+            <li class="header__sm-menu-link"><a href="./index.html#about">About</a></li>
+            <li class="header__sm-menu-link"><a href="./index.html#research">Research</a></li>
+            <li class="header__sm-menu-link"><a href="./index.html#projects">Projects</a></li>
+            <li class="header__link-wrapper"><a href="./music.html" class="header__link">Music Page</a></li>
+            <li class="header__sm-menu-link"><a href="./index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <section class="home-hero">
+      <div class="home-hero__content">
+        <h1 class="heading-primary">Jack Schwanewede</h1>
+        <div class="home-hero__info">
+          <p class="text-primary">
+            I'm a senior Cognitive Science major and Data Science minor at Davidson College.
+             I research virtual reality and cognition and am passionate about using technology and learning
+              from data to solve problems and improve how humans interact with the world around them.
+
+             This site is a work in progress — I'll be adding more about my research, projects, music,
+              and other creative works bit by bit.
+          </p>
+        </div>
+
+        <div class="home-hero__cta">
+            <a href="./assets/pdf/Jack_Schwanewede_CV.pdf" 
+              class="btn btn--bg" 
+              target="_blank" 
+              rel="noopener noreferrer">
+              CV
+            </a>        </div>
+      </div>
+      
+      <div class="home-hero__socials">
+        <div class="home-hero__social">
+          <a href="https://linkedin.com/in/jack-schwanewede" class="home-hero__social-icon-link" target="_blank">
+            <img src="./assets/png/linkedin-ico.png" alt="LinkedIn icon" class="home-hero__social-icon" />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a href="mailto:jaschwanewede@davidson.edu" class="home-hero__social-icon-link">
+            <img src="./assets/png/github-ico.png" alt="Email icon" class="home-hero__social-icon" />
+          </a>
+        </div>
+      </div>
+      <div class="home-hero__mouse-scroll-cont"><div class="mouse"></div></div>
+    </section>
+
+    <section id="about" class="about sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main">About Me</span>
+          <span class="heading-sec__sub">
+            
+          </span>
+        </h2>
+        <div class="about__content">
+          <div class="about__content-main">
+            <h3 class="about__content-title">Get to know me!</h3>
+            <div class="about__content-details">
+              <p class="about__content-details-para">
+                I'm <strong>Jack Schwanewede</strong>, a senior at Davidson College pursuing a B.S. in Cognitive Science with a Data Science minor. My academic and research work merges several disciplines, 
+                such as Computer Science and Psychology, to explore cognition and behavior in Virtual Reality.
+              </p>
+              <p class="about__content-details-para">
+                I'm passionate about using technology to solve problems for the greater good, from analyzing how 
+                confounding variables can impact behavioral research to building datasets to investigate embedded
+                inequities in video game statistics. 
+              </p>
+              <p class="about__content-details-para">
+                Beyond this, I love music, sports, gaming, and more. I’ve active in the Davidson music community 
+                since my freshman year, being the Principal Double Bassist in the Symphony Orchestra and playing 
+                bass guitar in several student bands. I help run the Davidson Games Club and love video games, especially 
+                RPGs, and am a big basketball fan. 
+              </p>
+            </div>
+            <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr">Contact</a>
+          </div>
+          <div class="about__content-skills">
+            <h3 class="about__content-title">My Skills</h3>
+            <div class="skills">
+              <div class="skills__skill">Python</div>
+              <div class="skills__skill">Java</div>
+              <div class="skills__skill">C#</div>
+              <div class="skills__skill">R</div>
+              <div class="skills__skill">SQL</div>
+              <div class="skills__skill">Stata</div>
+              <div class="skills__skill">JavaScript</div>
+              <div class="skills__skill">HTML/CSS</div>
+              <div class="skills__skill">Unity</div>
+              <div class="skills__skill">git</div>
+              <div class="skills__skill">Blender</div>
+              <div class="skills__skill">PyTorch</div>
+              <div class="skills__skill">pandas</div>
+              <div class="skills__skill">NumPy</div>
+              <div class="skills__skill">Beautiful Soup</div>
+              <div class="skills__skill">d3.js</div>
+              <div class="skills__skill">WordPress</div>
+              <div class="skills__skill">LaTeX</div>
             </div>
           </div>
-        </a>
+        </div>
       </div>
+    </section>
 
-      <div class="col-md-5">
-        <a href="https://jaschwanewede.github.io/deepLearning/index.html" target="_blank">
-          <div class="card shadow-sm p-3">
-            <div class="card-body">
-              <h5 class="card-title">CSC 374: Deep Learning</h5>
-              <p class="card-text">Collection of Deep Learning projects and models (Spring 2025).</p>
+    <section id="research" class="projects sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+          <span class="heading-sec__main">Research Experience</span>
+        </h2>
+        <div class="projects__content">
+
+          <div class="projects__row">
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">VR Researcher — Davidson Research in Immersive Virtual Environments</h3>
+              <p class="projects__row-content-desc">
+                Programmed virtual and mixed reality experiments in Unity and C#; analyzed data in R;
+                 first author on paper published in IEEE TVCG and under review at IEEE VR.
+                Adviser: Tabitha Peck, PhD
+
+              </p>
             </div>
           </div>
-        </a>
-      </div>
 
-      <div class="col-md-5">
-        <a href="https://jaschwanewede.github.io/catsstats/index.html" target="_blank">
-          <div class="card shadow-sm p-3">
-            <div class="card-body">
-              <h5 class="card-title">Cats Stats Field Hockey Corner Logger</h5>
-              <p class="card-text">Online Corner Logging Application for the Davidson Field Hockey Team.</p>
+          <div class="projects__row">
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Data Engineer and Research Adviser — Davidson VGSocLab</h3>
+              <p class="projects__row-content-desc">
+                Scraped and analyzed data on video game characters using Python and Beautiful Soup;
+                 advised on research design and manuscript preparation.
+                Adviser: Jeremy Brenner-Levoy, PhD
+
+              </p>
             </div>
           </div>
-        </a>
+          
+          <div class="projects__row">
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">VR Research Assistant — University College London, Solomon Lab</h3>
+              <p class="projects__row-content-desc">
+                Redesigned VR experiments on top-down perception and agency 
+                using Unity; collaborated with researchers to refine and 
+                optimize experimental design. Adviser: Sam Solomon, PhD
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
+    </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    <section id="publications" class="projects sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+          <span class="heading-sec__main">Publications & Presentations</span>
+      </h2>
+        <div class="projects__content">
+          <div class="projects__row">
+            <div class="projects__row-content">
+              <p class="projects__row-content-desc">
+                <strong>“Clean Up Your Lab: The Impact of Technology Clutter and Replica Environments on Cognitive Performance.”</strong> Under Review at IEEE Virtual Reality 2026.
+              </p>
+              <p class="projects__row-content-desc">
+                <strong>“The Impact of Environment Design Bias on Working Memory.”</strong> IEEE Transactions on Visualization and Computer Graphics, 2025.
+              </p>
+              <p class="projects__row-content-desc">
+                Presented research at <strong>IEEE VR 2025 (Saint-Malo, France)</strong> and Davidson College symposiums.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <section id="projects" class="projects sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+          <span class="heading-sec__main">Projects</span>
+        </h2>
+
+        <div class="projects__content">
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img src="./assets/png/fieldhockey.png" alt="Field Hockey App" class="projects__row-img" loading="lazy" style="width: 500px; height: auto;" />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Field Hockey Corner Analyzer</h3>
+              <p class="projects__row-content-desc">
+                Built an HTML/JavaScript web app to track and analyze field hockey corner plays for Davidson College Athletics. Used for scouting and strategic play-calling improvements.
+              </p>
+              <a href="./project-1.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Field Hockey Project</a>
+            </div>
+          </div>
+
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img src="./assets/png/2k.png" alt="Deep Learning Project" class="projects__row-img" loading="lazy" style="width: 500px; height: auto;" />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">NBA 2K Rating and All-Star Predictive Model</h3>
+              <p class="projects__row-content-desc">
+                Developed a multi-task deep learning model using PyTorch to predict NBA 2K player ratings and season awards. Trained on NBA season data and presented methodology in a technical report.
+              </p>
+              <a href="./project-2.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">NBA 2K Model</a>
+            </div>
+          </div>
+
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img src="./assets/png/smash.png" alt="Visualization Project" class="projects__row-img" loading="lazy"  style="width: 600px; height: auto;"/>
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Video Game Network Graph</h3>
+              <p class="projects__row-content-desc">
+                Created an interactive d3.js visualization mapping crossovers between characters in Super Smash Bros. Ultimate, allowing users to explore network relationships between franchises.
+              </p>
+              <a href="./project-3.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">video game network </a>
+            </div>
+          </div>
+
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img src="./assets/png/humes.png" alt="Humes Portfolio" class="projects__row-img" loading="lazy" style="width: 600px; height: auto;" />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Media in the Future: Humanities Portfolio</h3>
+              <p class="projects__row-content-desc">
+                Year-long portfolio created for the Davidson Humanities Program my freshman year. 
+                Hosts several written and creative works centralized around technology and multi-media.
+
+              </p>
+              <a href="https://humes22-23.jackschwanewede.dcreate.domains/" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Media in the Future </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="involvement" class="projects sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+          <span class="heading-sec__main">Involvement & Activities</span>
+        </h2>
+        <div class="projects__content">
+          <div class="projects__row">
+            <div class="projects__row-img-cont" style="flex:1; max-width:600px;">
+              <img
+                src="./assets/png/gamesclub.png"
+                alt="Games Club"
+                class="projects__row-img"
+                loading="lazy"
+                style="width: 100%; height: auto; border-radius: 8px;"
+              />
+            </div>
+
+            <div class="projects__row-content" style="flex:1; max-width:600px;">
+              <h3 class="projects__row-content-title">
+                Lead Programming Chair — Davidson Games Club
+              </h3>
+              <p class="projects__row-content-desc">
+                Organize and lead social events for 50+ participants, including board, card, and video games to strengthen the social community at Davidson.
+              </p>
+            </div>
+          </div>
+
+          <div class="projects__row">
+            <div class="projects__row-img-cont" style="flex:1; max-width:600px;">
+              <img
+                src="./assets/png/dvl.png"
+                alt="orchestra"
+                class="projects__row-img"
+                loading="lazy"
+                style="width: 100%; height: auto; border-radius: 8px;"
+              />
+            </div>
+            
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Bass Guitarist — WALT Radio/Student Bands</h3>
+              <p class="projects__row-content-desc">
+                I've performed in multiple student bands since my freshman year - currently in<strong> The Misprints</strong>. 
+              </p>
+                <a href="./music.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">View Music Page</a>
+            </div>
+          </div>
+
+          <div class="projects__row">
+            <div class="projects__row-img-cont" style="flex:1; max-width:600px;">
+              <img
+                src="./assets/jpeg/dsco.JPG"
+                alt="orchestra"
+                class="projects__row-img"
+                loading="lazy"
+                style="width: 100%; height: auto; border-radius: 8px;"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Principal Double Bassist — Davidson College Symphony Orchestra</h3>
+              <p class="projects__row-content-desc">
+                Rehearse and perform in over 10 concerts annually as part of the Davidson College Symphony Orchestra, 
+                as the only student bassist. 
+              </p>
+              <a href="./music.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">View Music Page</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact sec-pad dynamicBg">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main heading-sec__main--lt">Contact</span>
+          <span class="heading-sec__sub heading-sec__sub--lt">Contact me at jaschwanewede@davidson.edu</span>
+        </h2>
+        <div class="contact__form-container">
+          <form action="#" class="contact__form">
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="name">Name</label>
+              <input required placeholder="Enter Your Name" type="text" class="contact__form-input" name="name" id="name" />
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="email">Email</label>
+              <input required placeholder="Enter Your Email" type="text" class="contact__form-input" name="email" id="email" />
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="message">Message</label>
+              <textarea required cols="30" rows="10" class="contact__form-input" placeholder="Enter Your Message" name="message" id="message"></textarea>
+            </div>
+            <button type="submit" class="btn btn--theme contact__btn">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm"><span>Social</span></h2>
+            <div class="main-footer__social-cont">
+              <a target="_blank" rel="noreferrer" href="https://linkedin.com/in/jack-schwanewede">
+                <img class="main-footer__icon" src="./assets/png/linkedin-ico.png" alt="LinkedIn" />
+              </a>
+              <a target="_blank" rel="noreferrer" href="mailto:jaschwanewede@davidson.edu">
+                <img class="main-footer__icon" src="./assets/png/github-ico.png" alt="Email" />
+              </a>
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Jack Schwanewede</h4>
+            <p class="main-footer__short-desc">
+              Cognitive Science & Data Science student at Davidson College.
+            </p>
+          </div>
+        </div>
+        <div class="main-footer__lower">
+          &copy; Copyright 2025. Made by
+          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com">Ram Maheshwari</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
 </html>
