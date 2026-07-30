@@ -9,6 +9,117 @@
 
     <link rel="stylesheet" href="css/style.css" />
 
+    <style>
+      .music-hero {
+        background: linear-gradient(135deg, rgba(15, 23, 42, 0.96), rgba(30, 41, 59, 0.92));
+        min-height: 72vh;
+        display: flex;
+        align-items: center;
+        padding: 11rem 2rem 7rem;
+      }
+
+      .music-hero__inner {
+        width: 100%;
+        max-width: 1280px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.85fr);
+        align-items: center;
+        gap: 6rem;
+      }
+
+      .music-hero__eyebrow {
+        margin: 0 0 1.2rem;
+        color: rgba(255, 255, 255, 0.72);
+        font-size: 1.5rem;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      .music-hero .heading-primary {
+        color: #fff;
+        text-align: left;
+        margin-bottom: 2rem;
+      }
+
+      .music-hero__text {
+        color: rgba(255, 255, 255, 0.88);
+        font-size: 2rem;
+        line-height: 1.7;
+        max-width: 72rem;
+      }
+
+      .music-hero__cta {
+        margin-top: 3rem;
+      }
+
+      .music-hero__card {
+        margin: 0;
+        padding: 1.2rem;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 1.8rem;
+        box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.28);
+      }
+
+      .music-hero__image {
+        display: block;
+        width: 100%;
+        aspect-ratio: 4 / 5;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 1.2rem;
+      }
+
+      .music-hero__caption {
+        padding: 1.2rem 0.6rem 0.4rem;
+        color: rgba(255, 255, 255, 0.78);
+        font-size: 1.5rem;
+        text-align: center;
+      }
+
+      @media only screen and (max-width: 56.25em) {
+        .music-hero {
+          padding-top: 12rem;
+        }
+
+        .music-hero__inner {
+          grid-template-columns: 1fr;
+          gap: 4rem;
+        }
+
+        .music-hero__copy {
+          text-align: center;
+        }
+
+        .music-hero .heading-primary {
+          text-align: center;
+        }
+
+        .music-hero__text {
+          margin: 0 auto;
+        }
+
+        .music-hero__card {
+          width: min(100%, 48rem);
+          margin: 0 auto;
+          transform: none;
+        }
+      }
+
+      @media only screen and (max-width: 37.5em) {
+        .music-hero {
+          min-height: auto;
+          padding: 11rem 1.5rem 5rem;
+        }
+
+        .music-hero__text {
+          font-size: 1.7rem;
+        }
+      }
+    </style>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -35,7 +146,7 @@
             <li class="header__link-wrapper"><a href="./index.html#about" class="header__link">About</a></li>
             <li class="header__link-wrapper"><a href="./index.html#research" class="header__link">Research</a></li>
             <li class="header__link-wrapper"><a href="./index.html#projects" class="header__link">Projects</a></li>
-            <li class="header__link-wrapper"><a href="./music.html" class="header__link">Music Page</a></li>
+            <li class="header__link-wrapper"><a href="./music.html" class="header__link">Music</a></li>
             <li class="header__link-wrapper"><a href="./index.html#contact" class="header__link">Contact</a></li>
           </ul>
           <div class="header__main-ham-menu-cont">
@@ -57,18 +168,28 @@
       </div>
     </header>
 
-    <section class="project-cs-hero">
-      <div class="project-cs-hero__content">
-        <h1 class="heading-primary">Music Page</h1>
-        <div class="project-cs-hero__info">
-          <p class="text-primary">
-            This page highlights some of my music experiences, from recordings from my student bands at Davidson, the Davidson College Symphony Orchestra. I've been playing upright bass in orchestras since I was 10, 
-            and electric bass since my junior year of high school. I'm currently working on my own music and learning how to record and produce, and will hopefully one day release it and update it here!
-          </p>
+    <section class="music-hero">
+      <div class="music-hero__inner">
+        <div class="music-hero__copy">
+          <p class="music-hero__eyebrow"></p>
+          <h1 class="heading-primary">Music</h1>
+          <p class="music-hero__text">
+This page highlights some of my music experiences, including recordings from student bands and performances with the Davidson College Symphony Orchestra. 
+            I've played upright bass in orchestras since I was 10 and electric bass since my junior year of high school. 
+            I'm currently learning how to record and produce my own music, and which I hope to share here eventually.          </p>
+          <div class="music-hero__cta">
+            <a href="./index.html" class="btn btn--bg">Back to Portfolio</a>
+          </div>
         </div>
-        <div class="project-cs-hero__cta">
-          <a href="./index.html#involvement" class="btn btn--bg">Back to Portfolio</a>
-        </div>
+
+        <figure class="music-hero__card">
+          <img
+            src="./assets/jpeg/LT_performance_24.JPG"
+            alt="Jack Schwanewede performing with the Davidson College Symphony Orchestra"
+            class="music-hero__image"
+          />
+          <!--<figcaption class="music-hero__caption"></figcaption> -->
+        </figure>
       </div>
     </section>
 
@@ -99,11 +220,9 @@
   
   <div class="projects__row" style="display:flex; align-items:flex-start; gap:10px;">
 <p class="projects__row-content-desc" style="flex:1; max-width:none;">     
-     During my senior year, I played bass for The Misprints. Continuity in the Davidson music scene can be difficult with musicians frequently going abroad and graduating, but out 
-     of all four of the bands I played in, The Misprints were my favorite. After my previous band dissolved, I put together a new group from scratch, coordinated rehearsals,
-      mentored three first-year musicians, and organized performances throughout the year. We played seven shows and learned over 45 songs, attached in the Spotify playlist.
-      Seeing the band grow into a successful and reliable part of the campus music scene was incredibly rewarding, and I'm excited to see what they do in the future as they continue next year!
-     
+     During my senior year, I played bass for The Misprints. Bands at Davidson often change as people study abroad or graduate, so after my previous band 
+     dissolved, I helped put together a new group. We rehearsed regularly, played seven shows and learned more than 45 songs over the course of the year. 
+    Of the four bands I played in, The Misprints were my favorite, and I'm excited that the group is continuing after my graduation and looking forward to what they get up to!
       </p>
  
   </div>
@@ -179,7 +298,7 @@
           <div class="main-footer__row main-footer__row-2">
             <h4 class="heading heading-sm text-lt">Jack Schwanewede</h4>
             <p class="main-footer__short-desc">
-              Davidson College '26, Cognitive Science & Data Science. 
+              Cognitive Science, Data Science, VR/AR
             </p>
           </div>
         </div>
