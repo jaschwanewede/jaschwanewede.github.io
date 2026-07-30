@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Case Study of Project 1</title>
-    <meta name="description" content="Case study page of Project" />
+    <title>Research | Jack Schwanewede</title>
+    <meta
+      name="description"
+      content="Research publications, presentations, and immersive technology work by Jack Schwanewede."
+    />
 
     <link rel="stylesheet" href="css/style.css" />
 
@@ -15,216 +18,529 @@
       href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
       rel="stylesheet"
     />
+
+    <style>
+      .research-hero {
+        background: linear-gradient(135deg, rgba(15, 23, 42, 0.96), rgba(30, 41, 59, 0.92));
+        min-height: 72vh;
+        display: flex;
+        align-items: center;
+        padding: 11rem 2rem 7rem;
+      }
+
+      .research-hero__inner {
+        width: 100%;
+        max-width: 1280px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.85fr);
+        align-items: center;
+        gap: 6rem;
+      }
+
+      .research-hero__eyebrow {
+        margin: 0 0 1.2rem;
+        color: rgba(255, 255, 255, 0.72);
+        font-size: 1.5rem;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      .research-hero .heading-primary {
+        color: #fff;
+        text-align: left;
+        margin-bottom: 2rem;
+      }
+
+      .research-hero__text {
+        color: rgba(255, 255, 255, 0.88);
+        font-size: 2rem;
+        line-height: 1.7;
+        max-width: 72rem;
+      }
+
+      .research-hero__cta {
+        margin-top: 3rem;
+      }
+
+      .research-hero__card {
+        margin: 0;
+        padding: 1.2rem;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 1.8rem;
+        box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.28);
+      }
+
+      .research-hero__image {
+        display: block;
+        width: 100%;
+        aspect-ratio: 5 / 4;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 1.2rem;
+      }
+
+      .research-hero__caption {
+        padding: 1.2rem 0.6rem 0.4rem;
+        color: rgba(255, 255, 255, 0.78);
+        font-size: 1.5rem;
+        text-align: center;
+      }
+
+      .research-section {
+        padding: 7rem 0;
+      }
+
+      .research-section + .research-section {
+        padding-top: 1rem;
+      }
+
+      .research-heading {
+        font-size: 3.2rem;
+        margin-bottom: 3rem;
+      }
+
+      .research-card {
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        padding: 3rem;
+        margin-bottom: 2.5rem;
+      }
+
+      .research-card__title {
+        font-size: 2.4rem;
+        line-height: 1.35;
+        margin-bottom: 1rem;
+      }
+
+      .research-card__meta {
+        font-size: 1.7rem;
+        line-height: 1.6;
+        color: #555;
+        margin-bottom: 1.4rem;
+      }
+
+      .research-card__desc {
+        font-size: 1.8rem;
+        line-height: 1.7;
+        margin-bottom: 1.8rem;
+      }
+
+      .research-card__links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      .research-card__link {
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: #0441f8;
+        text-decoration: none;
+      }
+
+      .research-card__link:hover {
+        text-decoration: underline;
+      }
+
+      .research-status {
+        display: inline-block;
+        font-size: 1.4rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        margin-bottom: 1.3rem;
+      }
+
+      .research-methods {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 2rem;
+      }
+
+      .research-method {
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        padding: 2.5rem;
+      }
+
+      .research-method h3 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      .research-method p {
+        font-size: 1.65rem;
+        line-height: 1.6;
+      }
+
+      @media only screen and (max-width: 56.25em) {
+        .research-hero {
+          padding-top: 12rem;
+        }
+
+        .research-hero__inner {
+          grid-template-columns: 1fr;
+          gap: 4rem;
+        }
+
+        .research-hero__copy {
+          text-align: center;
+        }
+
+        .research-hero .heading-primary {
+          text-align: center;
+        }
+
+        .research-hero__text {
+          margin: 0 auto;
+        }
+
+        .research-hero__card {
+          width: min(100%, 48rem);
+          margin: 0 auto;
+          transform: none;
+        }
+
+        .research-methods {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      @media only screen and (max-width: 37.5em) {
+        .research-hero {
+          min-height: auto;
+          padding: 11rem 1.5rem 5rem;
+        }
+
+        .research-hero__text {
+          font-size: 1.7rem;
+        }
+
+        .research-section {
+          padding: 5rem 0;
+        }
+
+        .research-heading {
+          font-size: 2.7rem;
+        }
+
+        .research-card {
+          padding: 2.2rem;
+        }
+
+        .research-card__title {
+          font-size: 2.1rem;
+        }
+
+        .research-methods {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
   </head>
+
   <body>
     <header class="header">
       <div class="header__content">
         <div class="header__logo-container">
           <div class="header__logo-img-cont">
             <img
-              src="./assets/png/john-doe.png"
-              alt="Ram Maheshwari Logo Image"
+              src="./assets/jpeg/portrait.jpeg"
+              alt="Portrait of Jack Schwanewede"
               class="header__logo-img"
             />
           </div>
-          <span class="header__logo-sub">John Doe</span>
+          <span class="header__logo-sub">Jack Schwanewede</span>
         </div>
+
         <div class="header__main">
           <ul class="header__links">
-            <li class="header__link-wrapper">
-              <a href="./index.html" class="header__link"> Home </a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./index.html#about" class="header__link">About </a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./index.html#projects" class="header__link">
-                Projects
-              </a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./index.html#contact" class="header__link"> Contact </a>
-            </li>
+            <li class="header__link-wrapper"><a href="./index.html" class="header__link">Home</a></li>
+            <li class="header__link-wrapper"><a href="./index.html#about" class="header__link">About</a></li>
+            <li class="header__link-wrapper"><a href="./research.html" class="header__link">Research</a></li>
+            <li class="header__link-wrapper"><a href="./index.html#projects" class="header__link">Projects</a></li>
+            <li class="header__link-wrapper"><a href="./music.html" class="header__link">Music</a></li>
+            <li class="header__link-wrapper"><a href="./index.html#contact" class="header__link">Contact</a></li>
           </ul>
+
           <div class="header__main-ham-menu-cont">
-            <img
-              src="./assets/svg/ham-menu.svg"
-              alt="hamburger menu"
-              class="header__main-ham-menu"
-            />
+            <img src="./assets/svg/ham-menu.svg" alt="Open menu" class="header__main-ham-menu" />
             <img
               src="./assets/svg/ham-menu-close.svg"
-              alt="hamburger menu close"
+              alt="Close menu"
               class="header__main-ham-menu-close d-none"
             />
           </div>
         </div>
       </div>
+
       <div class="header__sm-menu">
         <div class="header__sm-menu-content">
           <ul class="header__sm-menu-links">
-            <li class="header__sm-menu-link">
-              <a href="./index.html"> Home </a>
-            </li>
-
-            <li class="header__sm-menu-link">
-              <a href="./index.html#about"> About </a>
-            </li>
-
-            <li class="header__sm-menu-link">
-              <a href="./index.html#projects"> Projects </a>
-            </li>
-
-            <li class="header__sm-menu-link">
-              <a href="./index.html#contact"> Contact </a>
-            </li>
+            <li class="header__sm-menu-link"><a href="./index.html">Home</a></li>
+            <li class="header__sm-menu-link"><a href="./index.html#about">About</a></li>
+            <li class="header__sm-menu-link"><a href="./research.html">Research</a></li>
+            <li class="header__sm-menu-link"><a href="./index.html#projects">Projects</a></li>
+            <li class="header__sm-menu-link"><a href="./music.html">Music</a></li>
+            <li class="header__sm-menu-link"><a href="./index.html#contact">Contact</a></li>
           </ul>
         </div>
       </div>
     </header>
-    <section class="project-cs-hero">
-      <div class="project-cs-hero__content">
-        <h1 class="heading-primary">Project 1</h1>
-        <div class="project-cs-hero__info">
-          <p class="text-primary">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-            in numquam incidunt earum quaerat cum fuga, atque similique natus
-            nobis sit.
+
+    <section class="research-hero">
+      <div class="research-hero__inner">
+        <div class="research-hero__copy">
+          <p class="research-hero__eyebrow">Human-Computer Interaction · Virtual Reality · Behavioral Research</p>
+          <h1 class="heading-primary">Research</h1>
+          <p class="research-hero__text">
+            My research in Virtual Reality explores how changes in virtual and mixed-reality environments can impact participant cognition and attention.
+            I've gained skills in experimental design, environment development, and behavioral data analysis to study how environmental and technological 
+            factors affect cognition, head movement, and performance.
           </p>
+          <div class="research-hero__cta">
+            <a href="./index.html#research" class="btn btn--bg">Back to Portfolio</a>
+          </div>
         </div>
-        <div class="project-cs-hero__cta">
-          <a href="#" class="btn btn--bg" target="_blank">Live Link</a>
-        </div>
+
+        <figure class="research-hero__card">
+          <img
+            src="./assets/jpeg/VR_daegu.jpg"
+            alt="Jack Schwanewede conducting immersive technology research"
+            class="research-hero__image"
+          />
+          <figcaption class="research-hero__caption">Presenting my work at IEEE VR 2026 in Daegu, South Korea.</figcaption>
+        </figure>
       </div>
     </section>
-    <section class="project-details">
+
+    <main class="project-details">
       <div class="main-container">
-        <div class="project-details__content">
-          <div class="project-details__showcase-img-cont">
-            <img
-              src="./assets/jpeg/project-mockup-example.jpeg"
-              alt="Project Image"
-              class="project-details__showcase-img"
-            />
-          </div>
-          <div class="project-details__content-main">
-            <div class="project-details__desc">
-              <h3 class="project-details__content-title">Project Overview</h3>
-              <p class="project-details__desc-para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                alias tenetur minus quaerat aliquid, aut provident blanditiis,
-                deleniti aspernatur ipsam eaque veniam voluptatem corporis vitae
-                mollitia laborum corrupti ullam rem. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Neque alias tenetur minus quaerat
-                aliquid, aut provident blanditiis, deleniti aspernatur ipsam
-                eaque veniam voluptatem corporis vitae mollitia laborum corrupti
-                ullam rem?
+        <section class="research-section" aria-labelledby="overview-heading">
+          <h2 id="overview-heading" class="research-heading">Research Overview</h2>
+
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/png/DRIVE_lab.png"
+                alt="Jack Schwanewede"
+                class="projects__row-img"
+              />
+            </div>
+
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Davidson Research in Immersive Virtual Environments</h3>
+              <p class="projects__row-content-desc">
+                Over the past two years, I've worked in Dr. Tabitha Peck's Human-Computer Interaction Lab and Extended Reality Lab.
+                I design and develop controlled virtual and mixed-reality experiments using Unity and C#. I received a Davidson Research Initiative Grant 
+                to support my research, and received a Dean Rusk International Travel grant to run a study at the Institute of Science Tokyo in Japan.
               </p>
-              <p class="project-details__desc-para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                alias tenetur minus quaerat aliquid, aut provident blanditiis,
-                deleniti aspernatur ipsam eaque veniam voluptatem corporis vitae
-                mollitia laborum corrupti ullam rem?
+              <p class="projects__row-content-desc">
+                Across multiple studies, I have worked with data from more than 200 participants and investigated how environmental design, visual clutter, and immersive technology can influence attention and cognitive performance.
               </p>
             </div>
-            <div class="project-details__tools-used">
-              <h3 class="project-details__content-title">Tools Used</h3>
-              <div class="skills">
-                <div class="skills__skill">HTML</div>
-                <div class="skills__skill">CSS</div>
-                <div class="skills__skill">JavaScript</div>
-                <div class="skills__skill">React</div>
-                <div class="skills__skill">SASS</div>
-                <div class="skills__skill">GIT</div>
-                <div class="skills__skill">Shopify</div>
-                <div class="skills__skill">Wordpress</div>
-                <div class="skills__skill">Google ADS</div>
-                <div class="skills__skill">Facebook Ads</div>
-                <div class="skills__skill">Android</div>
-                <div class="skills__skill">IOS</div>
-              </div>
+          </div>
+        </section>
+
+        <section class="research-section" aria-labelledby="publications-heading">
+          <h2 id="publications-heading" class="research-heading">Publications</h2>
+
+          <article class="research-card">
+            <span class="research-status">IEEE VR 2026</span>
+            <h3 class="research-card__title">
+              Clean Up Your Lab: The Impact of Technology Clutter and Replica Environments on Cognitive Performance
+            </h3>
+            <p class="research-card__meta">
+              Jack A. Schwanewede, Alesha D. Bond, and Tabitha C. Peck<br />
+              IEEE Conference on Virtual Reality and 3D User Interfaces, 2026
+            </p>
+            <p class="research-card__desc">
+              This study examined how technology clutter and differences between physical and virtual laboratory environments can affect cognitive performance. 
+            <div class="research-card__links">
+            <a
+              class="research-card__link"
+              href="./assets/pdf/Clean_Up_Your_Lab_IEEE_VR_26_Paper.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Read Paper
+            </a>
             </div>
-            <div class="project-details__links">
-              <h3 class="project-details__content-title">See Live</h3>
+          </article>
+
+          <article class="research-card">
+            <span class="research-status">IEEE TVCG 2025</span>
+            <h3 class="research-card__title">
+              The Impact of Environment Design Bias on Working Memory
+            </h3>
+            <p class="research-card__meta">
+              Jack A. Schwanewede, Alice A. Guth, and Tabitha C. Peck<br />
+              IEEE Transactions on Visualization and Computer Graphics, Volume 31, Issue 5, 2025
+            </p>
+            <p class="research-card__desc">
+              This work investigated whether the design of immersive environments can introduce unintended bias into studies of working memory. 
+            </p>
+                        <div class="research-card__links">
+                          <a
+              class="research-card__link"
+              href="./assets/pdf/The_Impact_of_Environment_Design_Bias_on_Working_Memory_OFFICIAL.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Read Paper
+            </a>
+            </div>
+          </article>
+        </section>
+
+        <section class="research-section" aria-labelledby="current-heading">
+          <h2 id="current-heading" class="research-heading">Current Research</h2>
+
+          <article class="research-card">
+            <span class="research-status">Manuscript in preparation</span>
+            <h3 class="research-card__title">
+              Ongoing Cross-Cultural AR/VR Research
+            </h3>
+            <p class="research-card__meta">
+              Jack A. Schwanewede, Y. Itoh, and Tabitha C. Peck
+            </p>
+            <p class="research-card__desc">
+              This project examines whether responses to environmental clutter differ across cultural contexts and immersive technologies. Currently working on manuscript for submission.
+            </p>
+          </article>
+        </section>
+
+        <section class="research-section" aria-labelledby="thesis-heading">
+          <h2 id="thesis-heading" class="research-heading">Honors Thesis</h2>
+
+          <article class="research-card">
+            <span class="research-status">High Honors in Cognitive Science · 2026</span>
+            <h3 class="research-card__title">
+              The Impacts of Environment Design on Attention and Cognitive Performance in Extended Reality
+            </h3>
+            <p class="research-card__meta">
+              Davidson College · Advisers: Tabitha C. Peck, Alesha D. Bond
+            </p>
+            <p class="research-card__desc">
+              My honors thesis brought together my research on environmental design, technological clutter, 
+              and cognition across physical and immersive environments. My thesis received High Honors and the Frontis W. Johnston Award from 
+              the Davidson College Center for Interdisplinary Studies (CIS).
+
+            </p>
+
+            <!-- Optional thesis PDF preview. Update the filename once the thesis is ready to share publicly. -->
+            <div class="paper-preview">
+              <iframe
+                class="paper-preview__frame"
+                src="./assets/pdf/Jack_Schwanewede_Honors_Thesis.pdf#page=1&toolbar=0&navpanes=0"
+                title="Preview of Jack Schwanewede's honors thesis"
+                loading="lazy"
+              ></iframe>
               <a
-                href="#"
-                class="btn btn--med btn--theme project-details__links-btn"
+                class="paper-preview__link"
+                href="./assets/pdf/Jack_Schwanewede_Honors_Thesis.pdf"
                 target="_blank"
-                >Live Link</a
+                rel="noopener noreferrer"
+                aria-label="Open Jack Schwanewede's honors thesis as a PDF"
               >
-              <a
-                href="#"
-                class="btn btn--med btn--theme-inv project-details__links-btn"
-                target="_blank"
-                >Code Link</a
-              >
+                <span class="paper-preview__label">Read Thesis</span>
+              </a>
+            </div>
+          </article>
+        </section>
+
+         <section class="research-section" aria-labelledby="presentations-heading">
+          <h2 id="presentations-heading" class="research-heading">Selected Presentations</h2>
+
+          <article class="research-card">
+            <span class="research-status">Conference Presentation</span>
+            <h3 class="research-card__title">IEEE Virtual Reality 2026</h3>
+            <p class="research-card__meta">Daegu, South Korea · March 2026</p>
+            <p class="research-card__desc">
+              Presented “Clean Up Your Lab: The Impact of Technology Clutter and Replica Environments on Cognitive Performance”
+          </article>
+
+          <article class="research-card">
+            <span class="research-status">Conference Presentation</span>
+            <h3 class="research-card__title">IEEE Virtual Reality 2025</h3>
+            <p class="research-card__meta">Saint-Malo, France · March 2025</p>
+            <p class="research-card__desc">
+              Presented “The Impact of Environment Design Bias on Working Memory” 
+            </p>
+          </article>
+
+          <article class="research-card">
+            <span class="research-status">Conference Presentation</span>
+            <h3 class="research-card__title">Southern Sociological Society 2026</h3>
+            <p class="research-card__meta">Jacksonville, Florida · April 2026</p>
+            <p class="research-card__desc">
+              Presented “A Machine Learning Approach to Predicting Video Game Character Demographics Based on Stat Attributes,” an 
+              interdisciplinary project using a scraped dataset and classification models to examine representation in video games.
+            </p>
+          </article>
+        </section>
+
+        <section class="research-section" aria-labelledby="methods-heading">
+          <h2 id="methods-heading" class="research-heading">Research Methods</h2>
+
+          <div class="research-methods">
+            <div class="research-method">
+              <h3>Experimental Design</h3>
+              <p>Controlled studies, participant protocols, variable selection, and behavioral measurement.</p>
+            </div>
+
+            <div class="research-method">
+              <h3>Immersive Development</h3>
+              <p>Virtual and mixed-reality experiment development using Unity and C#.</p>
+            </div>
+
+            <div class="research-method">
+              <h3>Data Analysis</h3>
+              <p>Data cleaning, statistical testing, visualization, and analysis of behavioral data in R.</p>
+            </div>
+
+            <div class="research-method">
+              <h3>Communication</h3>
+              <p>Academic writing, peer-reviewed publications, conference talks, and interdisciplinary collaboration.</p>
             </div>
           </div>
-        </div>
+        </section>
       </div>
-    </section>
+    </main>
+
     <footer class="main-footer">
       <div class="main-container">
         <div class="main-footer__upper">
           <div class="main-footer__row main-footer__row-1">
-            <h2 class="heading heading-sm main-footer__heading-sm">
-              <span>Social</span>
-            </h2>
+            <h2 class="heading heading-sm main-footer__heading-sm"><span>Social</span></h2>
             <div class="main-footer__social-cont">
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/linkedin-ico.png"
-                  alt="icon"
-                />
+              <a target="_blank" rel="noreferrer" href="https://linkedin.com/in/jack-schwanewede">
+                <img class="main-footer__icon" src="./assets/png/linkedin-ico.png" alt="LinkedIn" />
               </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/github-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/twitter-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/yt-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon main-footer__icon--mr-none"
-                  src="./assets/png/insta-ico.png"
-                  alt="icon"
-                />
+              <a target="_blank" rel="noreferrer" href="https://github.com/">
+                <img class="main-footer__icon" src="./assets/png/github-ico.png" alt="GitHub" />
               </a>
             </div>
           </div>
+
           <div class="main-footer__row main-footer__row-2">
-            <h4 class="heading heading-sm text-lt">John Doe</h4>
-            <p class="main-footer__short-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit facilis
-              tempora explicabo quae quod deserunt
-            </p>
+            <h4 class="heading heading-sm text-lt">Jack Schwanewede</h4>
+            <p class="main-footer__short-desc">Cognitive Science, Data Science, VR/AR</p>
           </div>
         </div>
 
         <div class="main-footer__lower">
-          &copy; Copyright 2021. Made by
-          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
-            >Ram Maheshwari</a
-          >
+          &copy; Made by
+          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com">Ram Maheshwari</a>
         </div>
       </div>
     </footer>
+
     <script src="./index.js"></script>
   </body>
 </html>
