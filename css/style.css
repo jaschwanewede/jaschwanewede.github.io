@@ -702,3 +702,98 @@ textarea {
   to {
     opacity: 0;
     top: 27px; } }
+
+    .research-overview {
+  background: #f7f8fb;
+}
+
+.research-overview__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2.4rem;
+  align-items: stretch;
+}
+
+.research-overview__card {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  background: #ffffff;
+  border: 1px solid rgba(20, 39, 74, 0.1);
+  border-radius: 1.4rem;
+  box-shadow: 0 1.2rem 3rem rgba(20, 39, 74, 0.08);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.research-overview__card:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 1.8rem 4rem rgba(20, 39, 74, 0.13);
+}
+
+.research-overview__label {
+  display: inline-block;
+  align-self: flex-start;
+  margin-bottom: 1.6rem;
+  padding: 0.6rem 1rem;
+  border-radius: 999px;
+  background: rgba(31, 78, 121, 0.1);
+  color: #1f4e79;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.research-overview__title {
+  margin-bottom: 0.8rem;
+  color: #1d2635;
+  font-size: 2.2rem;
+  line-height: 1.25;
+}
+
+.research-overview__role {
+  margin-bottom: 1.6rem;
+  color: #1f4e79;
+  font-size: 1.7rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.research-overview__description {
+  margin-bottom: 2rem;
+  color: #555f6f;
+  font-size: 1.6rem;
+  line-height: 1.7;
+}
+
+.research-overview__adviser {
+  margin-top: auto;
+  color: #737b88;
+  font-size: 1.4rem;
+  font-style: italic;
+}
+
+.research-overview__cta {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+@media only screen and (max-width: 62.5em) {
+  .research-overview__grid {
+    grid-template-columns: 1fr;
+    max-width: 76rem;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .research-overview__card {
+    padding: 2.4rem;
+  }
+
+  .research-overview__title {
+    font-size: 2rem;
+  }
+}

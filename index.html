@@ -241,9 +241,9 @@
           <ul class="header__links">
             <li class="header__link-wrapper"><a href="./index.html" class="header__link"> Home </a></li>
             <li class="header__link-wrapper"><a href="./index.html#about" class="header__link">About</a></li>
-            <li class="header__link-wrapper"><a href="./index.html#research" class="header__link">Research</a></li>
+            <li class="header__link-wrapper"><a href="./research.html" class="header__link">Research</a></li>
             <li class="header__link-wrapper"><a href="./index.html#projects" class="header__link">Projects</a></li>
-            <li class="header__link-wrapper"><a href="./music.html" class="header__link">Music Page</a></li>
+            <li class="header__link-wrapper"><a href="./music.html" class="header__link">Music</a></li>
             <li class="header__link-wrapper"><a href="./index.html#contact" class="header__link">Contact</a></li>
           </ul>
           <div class="header__main-ham-menu-cont">
@@ -257,9 +257,9 @@
           <ul class="header__sm-menu-links">
             <li class="header__sm-menu-link"><a href="./index.html">Home</a></li>
             <li class="header__sm-menu-link"><a href="./index.html#about">About</a></li>
-            <li class="header__sm-menu-link"><a href="./index.html#research">Research</a></li>
+            <li class="header__sm-menu-link"><a href="./research.html">Research</a></li>
             <li class="header__sm-menu-link"><a href="./index.html#projects">Projects</a></li>
-            <li class="header__link-wrapper"><a href="./music.html" class="header__link">Music Page</a></li>
+            <li class="header__link-wrapper"><a href="./music.html" class="header__link">Music</a></li>
             <li class="header__sm-menu-link"><a href="./index.html#contact">Contact</a></li>
           </ul>
         </div>
@@ -412,83 +412,93 @@
       </div>
     </section>
 
-<section id="research" class="projects sec-pad">
-  <div class="main-container" style="max-width: 1200px; margin: 0 auto;">
-    <h2 class="heading heading-sec heading-sec__mb-bg" style="text-align: center;">
+<section id="research" class="research-overview sec-pad">
+  <div class="main-container">
+    <h2 class="heading heading-sec heading-sec__mb-med">
       <span class="heading-sec__main">Research Experience</span>
+      <span class="heading-sec__sub">
+        My research combines immersive technology, behavioral science, and data analysis.
+        Explore the full research page for publications, presentations, and my honors thesis.
+      </span>
     </h2>
 
-    <div class="projects__content" style="display: flex; flex-direction: column; align-items: center;">
-      <div class="projects__row" style="width: 100%; max-width: 900px; text-align: left;">
-        <div class="projects__row-content">
-          <h3 class="projects__row-content-title">VR Researcher — Davidson Research in Immersive Virtual Environments</h3>
-          <p class="projects__row-content-desc">
-            Programmed virtual and mixed reality experiments in Unity and C#, analyzed data in R,
-            first author on two publications in IEEE TVCG and IEEE VR.
-            <br><em>Adviser: Tabitha Peck, PhD</em>
-          </p>
-        </div>
-      </div>
+    <div class="research-overview__grid">
 
-      <div class="projects__row" style="width: 100%; max-width: 900px; text-align: left;">
-        <div class="projects__row-content">
-          <h3 class="projects__row-content-title">Data Engineer and Research Adviser — Davidson VGSocLab</h3>
-          <p class="projects__row-content-desc">
-            Scraped and analyzed data on video game characters using Python and Beautiful Soup, advised research directives,
-            presented work at Southern Sociological Society.
-            <br><em>Adviser: Jeremy Brenner-Levoy, PhD</em>
-          </p>
-        </div>
-      </div>
+      <article class="research-overview__card">
+        <span class="research-overview__label">Virtual & Mixed Reality</span>
 
-      <div class="projects__row" style="width: 100%; max-width: 900px; text-align: left;">
-        <div class="projects__row-content">
-          <h3 class="projects__row-content-title">VR Research Assistant — University College London, Solomon Lab</h3>
-          <p class="projects__row-content-desc">
-            Redesigned VR experiments on top-down perception and agency using Unity; collaborated with researchers to refine and 
-            optimize experimental design. <br><em>Adviser: Sam Solomon, PhD</em>
-          </p>
-        </div>
-      </div>
+        <h3 class="research-overview__title">
+          Davidson Research in Immersive Virtual Environments
+        </h3>
 
-      <!-- Button to Research Page 
-      <div style="margin-top: 50px; text-align: center;">
-        <a href="./research.html" class="btn btn--med btn--theme" style="text-decoration: none;">
-          View Full Research Portfolio
-        </a>
-      </div>
-      -->
+        <p class="research-overview__role">
+          Human-Computer Interaction and VR Researcher
+        </p>
+
+        <p class="research-overview__description">
+          Designed and programmed virtual and mixed-reality experiments in Unity
+          and C#, analyzed behavioral data in R, and authored two first-author
+          publications in IEEE TVCG and IEEE VR.
+        </p>
+
+        <p class="research-overview__adviser">
+          Adviser: Tabitha Peck, PhD
+        </p>
+      </article>
+
+      <article class="research-overview__card">
+        <span class="research-overview__label">Data Science & Sociology</span>
+
+        <h3 class="research-overview__title">
+          Davidson Video Game Sociology Lab
+        </h3>
+
+        <p class="research-overview__role">
+          Data Engineer and Research Adviser
+        </p>
+
+        <p class="research-overview__description">
+          Built and cleaned a large dataset of video game characters using Python
+          and Beautiful Soup, developed machine-learning models, and presented the
+          research at the Southern Sociological Society.
+        </p>
+
+        <p class="research-overview__adviser">
+          Adviser: Jeremy Brenner-Levoy, PhD
+        </p>
+      </article>
+
+      <article class="research-overview__card">
+        <span class="research-overview__label">Cognitive Neuroscience</span>
+
+        <h3 class="research-overview__title">
+          University College London — Solomon Lab
+        </h3>
+
+        <p class="research-overview__role">
+          Virtual Reality Research Assistant
+        </p>
+
+        <p class="research-overview__description">
+          Redesigned VR experiments examining top-down perception and agency using
+          Unity, and collaborated with researchers to refine experimental design
+          and improve the study experience.
+        </p>
+
+        <p class="research-overview__adviser">
+          Adviser: Sam Solomon, PhD
+        </p>
+      </article>
+
+    </div>
+
+    <div class="research-overview__cta">
+      <a href="./research.html" class="btn btn--med btn--theme dynamicBgClr">
+        Explore My Research
+      </a>
     </div>
   </div>
 </section>
-
-<!--
-<section id="publications" class="projects sec-pad">
-  <div class="main-container" style="max-width: 1200px; margin: 0 auto;">
-    <h2 class="heading heading-sec heading-sec__mb-bg" style="text-align: center;">
-      <span class="heading-sec__main">Publications & Presentations</span>
-    </h2>
-
-    <div class="projects__content" style="display: flex; flex-direction: column; align-items: center;">
-      <div class="projects__row" style="width: 100%; max-width: 900px; text-align: left;">
-        <div class="projects__row-content">
-          <p class="projects__row-content-desc">
-            <strong>“Clean Up Your Lab: The Impact of Technology Clutter and Replica Environments on Cognitive Performance.”</strong><br>
-            IEEE Virtual Reality, 2026.
-          </p>
-          <p class="projects__row-content-desc">
-            <strong>“The Impact of Environment Design Bias on Working Memory.”</strong><br>
-            IEEE Transactions on Visualization and Computer Graphics, 2025.
-          </p>
-          <p class="projects__row-content-desc">
-            Presented research at <strong>IEEE VR 2025 (Saint-Malo, France)</strong> and Davidson College symposiums.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
--->
     
 
     <section id="projects" class="projects sec-pad">
